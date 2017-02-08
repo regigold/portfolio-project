@@ -59,11 +59,78 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-img {
+a {
+  text-decoration: none; }
+
+body {
+  display: flex; }
+
+main {
+  float: left;
+  width: 75.78125%;
+  /* 970px / 1280px */ }
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  /* percentage of remaining space it fill */
+  flex-shrink: 1;
+  /* percentage of space it fill relative to neighbors*/
+  flex-basis: 340px;
+  /* starting size */
+  padding-left: 30px;
+  /* 3.125% = 40px / 1280px */ }
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.image {
   display: block;
+  flex-grow: 0;
+  /* percentage of remaining space it fill */
+  flex-shrink: 0;
+  /* percentage of space it fill relative to neighbors*/
+  flex-basis: 250px;
+  /* starting size */
+  height: 250px;
+  border: 1px solid #242A37; }
+
+.description {
+  display: block;
+  flex-grow: 1;
+  /* percentage of remaining space it fill */
+  flex-shrink: 0;
+  /* percentage of space it fill relative to neighbors*/
+  flex-basis: 250px;
+  /* starting size */
+  height: 250px;
+  /* padding-left: 2.298850574%; 20px / 870px */
+  background-color: #242A37;
+  opacity: .75; }
+
+nav {
+  display: block;
+  flex-grow: 0;
+  /* percentage of remaining space it fill */
+  flex-shrink: 1;
+  /* percentage of space it fill relative to neighbors*/
+  flex-basis: 310px;
+  /* starting size */
+  height: 100vh;
+  position: relative;
+  border-left: 1px solid tomato;
+  border-right: 1px solid tomato; }
+
+nav div {
+  display: block;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  right: 30px;
+  bottom: 0;
+  background-color: tomato; }
 
 /*# sourceMappingURL=styles.css.map */
