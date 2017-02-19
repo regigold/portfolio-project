@@ -29,16 +29,11 @@ main {
 .project-wrapper {
 	display: flex;
     flex-direction: column;
-//	justify-content: center;
-
-	flex-grow: 1;/* percentage of remaining space it fill */
-	flex-shrink: 0;/* percentage of space it fill relative to neighbors*/
-	flex-basis: 500px;/* starting size */
-    
+	justify-content: center;
     height: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 	/* padding-left: 30px; 3.125% = 40px / 1280px */
 }
 
@@ -50,9 +45,9 @@ main {
 .image {
 	display: block;
 
-	flex-grow: 0;/* percentage of remaining space it fill */
-	flex-shrink: 0;/* percentage of space it fill relative to neighbors*/
-	flex-basis: 300px;/* starting size */
+	flex-grow: 0; /* percentage of remaining space it fill */
+	flex-shrink: 0; /* percentage of space it fill relative to neighbors */
+	flex-basis: 300px; /* starting size */
 
 	height: 300px;
     margin-top: 20px;
@@ -62,12 +57,12 @@ main {
 .description {
 	display: block;
 	
-	flex-grow: 1;/* percentage of remaining space it fill */
-	flex-shrink: 0;/* percentage of space it fill relative to neighbors*/
-	flex-basis: 300px;/* starting size */
+	flex-grow: 1; /* percentage of remaining space it fill */
+	flex-shrink: 0; /* percentage of space it fill relative to neighbors*/
+	flex-basis: 300px; /* starting size */
 
 	height: 300px; 
-    margin: 20px 0;
+    margin-top: 20px;
 	/* padding-left: 2.298850574%; 20px / 870px */
 	background-color: $darkblue;
 	opacity: .75;
@@ -82,7 +77,7 @@ nav {
 nav .nav-wrapper {
 	display: block;
 	width: 300px;
-	height: 100vh;
+	height: 500px;
 	position: fixed;
     right: 40px;    
 	bottom: 0;

@@ -1,0 +1,85 @@
+// --- VARIABLES --- //
+
+$darkblue:      #242A37;
+$lightgrey: 	#F7F7F7;
+$orange:		tomato;
+
+// --- GENERAL STYLES --- //
+
+body {
+	display: flex;
+}
+
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main {
+	float: left;
+	width: 100%; 
+    padding-right: 380px;
+    /* width: 75.78125%; 970px / 1280px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-wrapper {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+	/* padding-left: 30px; 3.125% = 40px / 1280px */
+}
+
+.project {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image {
+	display: block;
+
+	flex-grow: 0; /* percentage of remaining space it fill */
+	flex-shrink: 0; /* percentage of space it fill relative to neighbors */
+	flex-basis: 300px; /* starting size */
+
+	height: 300px;
+    margin-top: 20px;
+	background-color: cadetblue;
+}
+
+.description {
+	display: block;
+	
+	flex-grow: 1; /* percentage of remaining space it fill */
+	flex-shrink: 0; /* percentage of space it fill relative to neighbors*/
+	flex-basis: 300px; /* starting size */
+
+	height: 300px; 
+    margin-top: 20px;
+	/* padding-left: 2.298850574%; 20px / 870px */
+	background-color: $darkblue;
+	opacity: .75;
+}
+
+nav {
+    width: 380px;
+	position: absolute;
+    right: 0;
+}
+
+nav .nav-wrapper {
+	display: block;
+	width: 300px;
+	height: 500px;
+	position: fixed;
+    right: 40px;    
+	bottom: 0;
+	background-color: $orange;
+}
