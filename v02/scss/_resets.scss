@@ -67,3 +67,19 @@ table {
 a {
 	text-decoration: none;
 }
+
+/* focus ring reset -- apply custom focus state */
+
+:focus {
+    outline: 0;
+}
+
+/* button reset */
+
+button {
+    border: 0;
+    background-color: none;
+    color: inherit;
+    font: inherit;
+    
+}

@@ -62,4 +62,287 @@ table {
 a {
   text-decoration: none; }
 
+/* focus ring reset -- apply custom focus state */
+:focus {
+  outline: 0; }
+
+/* button reset */
+button {
+  border: 0;
+  background-color: none;
+  color: inherit;
+  font: inherit; }
+
+/* --- FONTS --- */
+@font-face {
+  font-family: 'hk_groteskregular';
+  src: url("../fonts/hkgrotesk-regular-webfont.eot");
+  src: url("../fonts/hkgrotesk-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../fonts/hkgrotesk-regular-webfont.woff") format("woff"), url("../fonts/hkgrotesk-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratextrabold';
+  src: url("../fonts/montserrat-extrabold-webfont.eot");
+  src: url("../fonts/montserrat-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabold-webfont.woff") format("woff"), url("../fonts/montserrat-extrabold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.eot");
+  src: url("../fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratextralight';
+  src: url("../fonts/montserrat-extralight-webfont.eot");
+  src: url("../fonts/montserrat-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url("../fonts/montserrat-semibold-webfont.eot");
+  src: url("../fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratthin';
+  src: url("../fonts/montserrat-thin-webfont.eot");
+  src: url("../fonts/montserrat-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-thin-webfont.woff2") format("woff2"), url("../fonts/montserrat-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* ---------------------------------------
+   GENERAL STYLES 
+--------------------------------------- */
+.wrapper {
+  padding: 0 20px; }
+
+h3 {
+  margin-bottom: 20px;
+  font-family: "montserratsemibold";
+  font-size: 1.25em;
+  line-height: 30px;
+  letter-spacing: .125em;
+  color: #E1b451; }
+
+p,
+li {
+  font-family: "hk_groteskregular";
+  font-size: 1em;
+  letter-spacing: .1em;
+  line-height: 26px; }
+
+/* ---------------------------------------
+   HEADER STYLES 
+--------------------------------------- */
+header {
+  display: block;
+  width: 100%;
+  height: 60vh;
+  background-color: #E1b451;
+  position: relative; }
+
+nav img {
+  display: block;
+  width: 30px;
+  float: right;
+  padding-top: 30px; }
+
+nav ul {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  background-color: #E1b451; }
+
+nav li {
+  height: 50px;
+  flex-grow: 1;
+  text-align: center; }
+
+nav li a {
+  display: block;
+  font-family: "montserratbold";
+  line-height: 50px;
+  font-size: .85em;
+  color: white;
+  letter-spacing: .125em; }
+  nav li a:hover {
+    background-color: #e5bd66; }
+  nav li a:active, nav li a:focus {
+    background-color: #c69e47; }
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px; }
+
+.title-text h1,
+.title-text h2 {
+  color: white;
+  letter-spacing: .125em;
+  line-height: 1.125em;
+  z-index: 10; }
+
+.title-text h1 {
+  order: 2;
+  padding-bottom: 30px;
+  font-family: "montserratextrabold";
+  font-size: 1.8em; }
+
+.title-text h2 {
+  padding-bottom: 20px;
+  font-family: "montserratextralight";
+  font-size: 1.25em; }
+
+@media only screen and (min-width: 321px) {
+  .title-text h1 {
+    font-size: 2em; }
+
+  .title-text h2 {
+    font-size: 1.5em; } }
+.header-img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .5; }
+
+/* ---------------------------------------
+   ALL PROCESS CONTAINER STYLES 
+--------------------------------------- */
+.container {
+  margin: 100px 0; }
+
+/* ---------------------------------------
+   INTRODUCTION CONTAINTER STYLES 
+--------------------------------------- */
+.project-intro {
+  margin-top: 75px; }
+
+.project-intro p {
+  font-size: 1.125em;
+  line-height: 32px;
+  margin-bottom: 50px; }
+
+.project-intro li {
+  font-size: .95em; }
+
+.project-tools-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.tools,
+.skills {
+  width: 50%;
+  text-align: center; }
+
+.project-intro button {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 18px;
+  font-family: "montserratsemibold";
+  text-transform: uppercase;
+  font-size: 1.125em;
+  letter-spacing: .125em;
+  color: white;
+  background-color: #E1b451; }
+  .project-intro button:hover {
+    background-color: #e5bd66; }
+  .project-intro button:active, .project-intro button:focus {
+    background-color: #c69e47; }
+
+#sticky.stick {
+  margin-top: 0 !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  font-size: .8em;
+  width: 100%;
+  text-align: center; }
+
+/* ---------------------------------------
+   FOOTER STYLES 
+--------------------------------------- */
+footer {
+  display: block;
+  height: 200px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  position: relative;
+  background-color: #231F20; }
+
+footer p {
+  font-size: .75em;
+  color: white;
+  position: absolute;
+  bottom: 20px; }
+
+/* ---------------------------------------
+   PAGE STYLES
+--------------------------------------- */
+/* ---------------------------------------
+##  RESPONSIVE NEW YORK POST
+--------------------------------------- */
+.layout img {
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  margin-bottom: 50px; }
+
+.typography img {
+  margin-top: 50px; }
+
+.swatches {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 265px;
+  height: 265px;
+  padding: 24px; }
+
+.swatch p {
+  text-transform: uppercase;
+  color: white; }
+
+.swatch-01 {
+  background-color: #E1B451; }
+
+.swatch-02 {
+  background-color: #C09945; }
+
+.swatch-03 {
+  background-color: #231F20; }
+
+.responsive img:nth-of-type(3) {
+  margin-bottom: 50px; }
+
+.menu img:nth-of-type(3) {
+  margin-bottom: 50px; }
+
+/* ---------------------------------------
+   TEMP STYLES **DELETE**
+--------------------------------------- */
+body,
+nav ul,
+#sticky.stick {
+  width: 320px; }
+
 /*# sourceMappingURL=styles.css.map */

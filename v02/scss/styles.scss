@@ -5,6 +5,8 @@
 // --- RESETS, VARIABLES AND FONTS --- //
 
 @import "resets";
+@import "fonts";
+@import "mixins";
 
 
 // --- GENERAL STYLES --- //
@@ -12,6 +14,3 @@
 @import "general";
 
 
-// --- END MEDIA QUERIES --- //
-
-@import "media-queries";
