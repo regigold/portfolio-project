@@ -166,7 +166,8 @@ header {
     height: 60vh; } }
 nav {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding-top: 28px; }
 
 nav svg {
   display: block;
@@ -200,9 +201,6 @@ nav li a {
     background-color: #c69e47; }
 
 @media only screen and (min-width: 640px) {
-  nav {
-    padding-top: 28px; }
-
   nav img {
     float: none; }
 
@@ -415,37 +413,7 @@ footer p {
 /* ---------------------------------------
    INDIVIDUAL PAGE STYLES
 --------------------------------------- */
-/* ABOUT PAGE 
-======================================= */
-#about header {
-  height: auto;
-  background-color: transparent; }
-#about nav svg path {
-  fill: #231F20; }
-#about nav svg:hover path {
-  fill: #00A99D; }
-@media only screen and (min-width: 640px) {
-  #about nav li a {
-    color: #231F20; }
-    #about nav li a:hover, #about nav li a:active, #about nav li a:focus {
-      color: #231F20;
-      border-bottom: 0.19em solid #231F20; } }
-@media only screen and (min-width: 900px) {
-  #about .intro {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 175px;
-    margin-bottom: 175px; }
-  #about .intro h3 {
-    font-size: 2.125em;
-    color: #231F20;
-    margin-bottom: 30px; }
-  #about .intro p {
-    padding-right: 0;
-    margin-bottom: 100px;
-    width: 700px; } }
-
-/* NEW YORK POST REDESIGN 
+/* PROJECT PAGES 
 ======================================= */
 #new-york-post-redesign .layout img {
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
@@ -477,5 +445,36 @@ footer p {
   background-color: #C09945; }
 #new-york-post-redesign .swatch-03 {
   background-color: #231F20; }
+
+/* ABOUT PAGE 
+======================================= */
+#about header {
+  height: auto;
+  background-color: transparent; }
+#about nav svg path {
+  fill: #231F20;
+  transition: fill .3s ease-in-out; }
+#about nav svg:hover path {
+  fill: #00A99D; }
+@media only screen and (min-width: 640px) {
+  #about nav li a {
+    color: #231F20; }
+    #about nav li a:hover, #about nav li a:active, #about nav li a:focus {
+      color: #231F20;
+      border-bottom: 0.19em solid #231F20; } }
+@media only screen and (min-width: 900px) {
+  #about .intro {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 175px;
+    margin-bottom: 175px; }
+  #about .intro h3 {
+    font-size: 2.125em;
+    color: #231F20;
+    margin-bottom: 30px; }
+  #about .intro p {
+    padding-right: 0;
+    margin-bottom: 100px;
+    width: 700px; } }
 
 /*# sourceMappingURL=styles.css.map */

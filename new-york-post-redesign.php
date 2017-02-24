@@ -3,7 +3,7 @@
 
 <?php include_once 'include/head.php'; // include head ?>
 
-<body id="new-york-post-redesign">
+<body id="new-york-post-redesign" class="project-page" >
 
     <header>
        

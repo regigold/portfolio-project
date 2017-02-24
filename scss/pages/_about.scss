@@ -12,6 +12,7 @@
     
     nav svg path{
         fill: $black;
+        transition: fill .3s ease-in-out;
     }
 
     nav svg:hover path {

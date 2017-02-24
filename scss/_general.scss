@@ -101,6 +101,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    padding-top: 28px;
 }
 
 nav svg {
@@ -145,10 +146,6 @@ nav li a {
 }
 
 @media only screen and (min-width: 640px) {
-    
-    nav {
-        padding-top: 28px;
-    }
     
     nav img {
         float: none;
@@ -450,13 +447,17 @@ footer p {
    INDIVIDUAL PAGE STYLES
 --------------------------------------- */
 
-// about page //
+// work page //
 
-@import "pages/_about";
 
 // project pages //
 
-@import "pages/_new-york-post";
+@import "pages/_project-pages";
+
+
+// about page //
+
+@import "pages/_about";
 
 
 // contact //
