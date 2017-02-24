@@ -1,0 +1,463 @@
+// colors //
+
+$black: #231F20;
+$highlight: #00A99D;
+$responsive: #E1b451;
+
+// fonts //
+
+$mont-extra-bold: 'montserratextrabold';
+$mont-bold: 'montserratbold';
+$mont-light: 'montserratlight';
+$hk-grotesk: 'hk_groteskregular';
+
+$mont-semi-bold: 'montserratsemibold';
+$mont-extra-light: 'montserratextralight';
+$mont-thin: 'montserratthin';
+
+
+/* ---------------------------------------
+   GENERAL STYLES 
+--------------------------------------- */
+
+.wrapper {
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 450px) {
+    
+    .wrapper {
+        padding: 0 25px;
+    }
+    
+}
+
+@media only screen and (min-width: 740px) {
+    
+    .wrapper {
+        padding: 0 30px;
+    }
+    
+}
+
+@media only screen and (min-width: 1020px) {
+    
+    .wrapper {
+        padding: 0;
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-family: $mont-semi-bold;
+    font-size: 1.25em; // 20px = 1.25em
+    line-height: 30px;
+    letter-spacing: .125em;
+    color: $responsive;
+}
+
+p,
+li{
+    font-family: $hk-grotesk;
+    font-size: 1em;
+    letter-spacing: .1em;
+    line-height: 26px;
+}
+
+
+/* ---------------------------------------
+   HEADER STYLES 
+--------------------------------------- */
+
+header {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    background-color: $responsive;
+    position: relative;
+}
+
+@media only screen and (min-width: 640px) {
+    
+    header {
+        height: 70vh;
+    }
+    
+}
+
+@media only screen and (min-width: 740px) {
+    
+    header {
+        height: 60vh;
+    }
+    
+}
+
+// navigation bar //
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav svg {
+    display: block;
+    width: 30px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0;
+    left: 0;
+    background-color: $responsive;
+}
+
+nav li {
+    height: 50px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    font-family: $mont-bold;
+    line-height: 50px;
+    font-size: .85em;
+    color: white;
+    letter-spacing: .125em;
+
+    &:hover {
+    background-color: tint( $responsive, 12% );
+    }
+
+    &:active,
+    &:focus {
+        background-color: shade( $responsive, 12% );
+    }
+    
+}
+
+@media only screen and (min-width: 640px) {
+    
+    nav {
+        padding-top: 28px;
+    }
+    
+    nav img {
+        float: none;
+    }
+    
+    nav ul {
+        justify-content: flex-end;
+        position: static;
+        background-color: transparent;
+        z-index: 100;
+    }
+    
+    nav li {
+        height: auto;
+        flex-grow: 0;
+        margin-left: 30px;
+    }
+    
+    nav li a {
+        padding: 0 0 6px 0;
+        line-height: normal;
+        font-size: .9em;
+        border-bottom: 2px solid transparent;
+        transition: border-color .3s;
+        
+        &:hover,
+        &:active,
+        &:focus {
+            color: white;
+            background-color: transparent;
+            border-bottom: .19em solid white;
+        }
+        
+    }
+    
+}
+
+@media only screen and (min-width: 740px) {
+    
+    nav li a {
+        font-size: 1.125em;
+    }
+    
+}
+
+
+// project title text and images //
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+}
+
+.title-text h1,
+.title-text h2 {
+    color: white;
+    letter-spacing: .125em;
+    line-height: 1.125em;
+    z-index: 10;
+}
+
+.title-text h1 {
+    order: 2;
+    padding-bottom: 30px;
+    font-family: $mont-extra-bold;
+    font-size: 1.8em; // 2em = 32px
+}
+
+.title-text h2 {
+    padding-bottom: 20px;
+    font-family: $mont-extra-light;
+    font-size: 1.25em; // 1.5em = 24px
+}
+
+.header-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .5;
+}
+
+@media only screen and (min-width: 321px) {
+    
+    .title-text h1 {
+        font-size: 2em; // 2em = 32px
+    }
+    
+    .title-text h2 {
+        font-size: 1.5em; // 1.5em = 24px
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .title-text h1 {
+        font-size: 2.5em; // 2em = 32px
+        padding-bottom: 50px;
+    }
+    
+    .title-text h2 {
+        font-size: 1.95em; // 1.5em = 24px
+    }
+    
+}
+
+/* ---------------------------------------
+   GENERAL PROCESS CONTAINER STYLES
+--------------------------------------- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.container .description p {
+    margin-bottom: 50px;
+}
+
+.container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 740px) {
+    
+    .container .description p,
+    .container .description h3 {
+        display: block;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    
+}
+
+@media only screen and (min-width: 960px) {
+    
+    .container {
+        margin: 150px 0;
+    }
+    
+    .container .description p {
+    margin-bottom: 100px;
+}
+    
+}
+
+/* ---------------------------------------
+   INTRODUCTION CONTAINTER
+--------------------------------------- */
+
+.intro {
+    margin-top: 75px;
+}
+
+.intro p {
+    font-size: 1.125em; // 20px = 1.25em
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.intro li {
+    font-size: .95em;
+}
+
+.project-tools-skills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tools,
+.skills {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 145px;
+    text-align: center;
+}
+
+.intro button {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 18px;
+    font-family: $mont-semi-bold;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    letter-spacing: .125em;
+    color: white;
+    background-color: $responsive;
+    transition: all 0.5s ease;
+    
+    &:hover {
+    background-color: tint( $responsive, 12% );
+    }
+
+    &:active,
+    &:focus {
+        background-color: shade( $responsive, 12% );
+    }
+    
+}
+
+// button sticky nav id's //
+
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000; 
+    font-size: .8em;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .intro {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 125px;
+        margin-bottom: 175px;
+    }
+    
+    .intro p {
+        padding-right: 35px;
+        margin-bottom: 100px;
+        width: 70%;
+    }
+
+    .project-tools-skills {
+        align-self: flex-start;
+        width: 30%;
+        margin: 0;
+    }
+    
+    #sticky-anchor {
+        width: 100%;
+    }
+    
+}
+
+/* ---------------------------------------
+   FOOTER STYLES 
+--------------------------------------- */
+
+footer {
+    display: block;
+    height: 200px;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    position: relative;
+    background-color: $black;
+}
+
+footer ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+footer li:nth-of-type(2) {
+    margin: 0 10px;
+}
+
+footer a {
+    display: block;
+    color: white;
+    font-size: 26px;
+    padding: 8px;
+}
+
+footer p {
+    font-size: .75em;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+    
+    footer {
+        margin-bottom: 0;
+    }
+    
+    footer ul {
+        float: right;
+    }
+}
+
+
+/* ---------------------------------------
+   INDIVIDUAL PAGE STYLES
+--------------------------------------- */
+
+// about page //
+
+@import "pages/_about";
+
+// project pages //
+
+@import "pages/_new-york-post";
+
+
+// contact //
+ 
