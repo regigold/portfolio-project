@@ -19,7 +19,26 @@
        
            <section class="project-gallery">
               
-              <article class="project 01"></article> 
+              <article class="project p01">
+                  
+                  <img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage">
+                  <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version">
+                  
+              </article> 
+              
+              <article class="project p02">
+                  
+                  <img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage">
+                  <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version">
+                  
+              </article>
+              
+              <article class="project p03">
+                  
+                  <img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage">
+                  <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version">
+                  
+              </article>
             
            </section> <!-- end project gallery -->
        
