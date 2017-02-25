@@ -19,7 +19,7 @@
 
           </div>
 
-          <img class="header-img" src="images/new-york-post/header-img-responsive-01.png" alt="mobile and desktop screen shots of the redesigned New York Post website">
+          <img class="header-img" src="images/twd-landing-page/twd-landing-page-header.png" alt="desktop screen shots of the redesigned New York Post website">
        
        </div>
         
@@ -54,7 +54,6 @@
 
                        <ul>
                            <li>Web Design</li>
-                           <li>Responsive</li>
                            <li>UI / UX</li>
                        </ul>
 
@@ -78,23 +77,9 @@
                
                </div>
                
-               <img src="images/new-york-post/responsive-layout.jpg" alt="The front page of the New York Times, June 6th, 1944">
+               <img src="images/twd-landing-page/folders.png" alt="a series of multicoloured file folders overlapping diagonally">
 
            </section> <!-- end layout container -->
-
-           <section class="typography container">
-               
-               <div class="description">
-
-                   <h3>Typography</h3>
-
-                   <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
-               
-               </div>
-
-               <img src="images/new-york-post/responsive-typography.svg" alt="a list of typefaces used in the New York Post Redisgn. Fonts include: Heuristica, Franklin Gothic and Roboto">
-               
-           </section> <!-- end typography container -->
 
            <section class="color-palette container">
                
@@ -110,12 +95,12 @@
 
                    <div class="swatch swatch-01">
 
-                      <p>Yellow</p>
+                      <p>Salmon</p>
 
                       <div class="swatch-codes">
 
-                          <p>HEX #E1B451</p>
-                          <p>RGB 255, 180, 10</p>
+                          <p>HEX #F5AE70</p>
+                          <p>RGB 245, 174, 112</p>
 
                       </div>
 
@@ -123,12 +108,12 @@
 
                    <div class="swatch swatch-02">
 
-                      <p>Off Yellow</p>
+                      <p>Torquoise</p>
 
                       <div class="swatch-codes">
 
-                          <p>HEX #C09945</p>
-                          <p>RGB 192, 153, 75</p>
+                          <p>HEX #1FADA6</p>
+                          <p>RGB 31, 173, 166</p>
 
                       </div>
 
@@ -136,26 +121,70 @@
 
                    <div class="swatch swatch-03">
 
-                      <p>Black</p>
+                      <p>Pink</p>
 
                       <div class="swatch-codes">
 
-                          <p>HEX #231F20</p>
-                          <p>RGB 35, 31, 32</p>
+                          <p>HEX #FFB6C1</p>
+                          <p>RGB 255, 182, 193</p>
+
+                      </div>
+                      
+                      <div class="swatch swatch-04">
+
+                      <p>Green</p>
+
+                      <div class="swatch-codes">
+
+                          <p>HEX #90EE90</p>
+                          <p>RGB 144, 238, 144</p>
+
+                      </div>
+                      
+                      <div class="swatch swatch-05">
+
+                      <p>Yellow</p>
+
+                      <div class="swatch-codes">
+
+                          <p>HEX #FFFF80</p>
+                          <p>RGB 255, 255, 128</p>
+
+                      </div>
+                      
+                      <div class="swatch swatch-06">
+
+                      <p>Red</p>
+
+                      <div class="swatch-codes">
+
+                          <p>HEX #FF6347</p>
+                          <p>RGB 255, 99, 71</p>
 
                       </div>
 
                    </div>
+                   
+                   <div class="swatch swatch-07">
+
+                      <p>Blue</p>
+
+                      <div class="swatch-codes">
+
+                          <p>HEX #4682B4</p>
+                          <p>RGB 70, 130, 180</p>
+
+                      </div>
                
                </div>
 
            </section> <!-- end color-palette container -->
 
-           <section class="feature-01 container">
+           <section class="accordian container">
               
                <div class="description">
                
-                   <h3>Responsive Web Design</h3>
+                   <h3>Accordian Menu</h3>
 
                    <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
                
@@ -172,28 +201,6 @@
                </div>
 
            </section> <!-- end responsive container -->
-           
-           <section class="feature-02 container">
-              
-               <div class="description">
-               
-                   <h3>Bottom Oriented Menu Bar</h3>
-
-                   <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
-               
-               </div>
-               
-               <div class="gallery">
-               
-                   <img src="images/new-york-post/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed">
-
-                   <img src="images/new-york-post/responsive-mobile-menu-02.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'sections' open">
-
-                   <img src="images/new-york-post/responsive-mobile-menu-03.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'search' bar open">
-
-               </div>
-
-           </section> <!-- end menu container -->
        
        </div>
         
