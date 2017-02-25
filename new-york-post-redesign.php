@@ -19,7 +19,7 @@
 
           </div>
 
-          <img class="header-img" src="images/header-img-responsive-01.png" alt="mobile and desktop screen shots of the redesigned New York Post website">
+          <img class="header-img" src="images/new-york-post/header-img-responsive-01.png" alt="mobile and desktop screen shots of the redesigned New York Post website">
        
        </div>
         
@@ -79,7 +79,7 @@
                
                </div>
                
-               <img src="images/responsive-layout.jpg" alt="The front page of the New York Times, June 6th, 1944">
+               <img src="images/new-york-post/responsive-layout.jpg" alt="The front page of the New York Times, June 6th, 1944">
 
            </section> <!-- end layout container -->
 
@@ -93,7 +93,7 @@
                
                </div>
 
-               <img src="images/responsive-typography.svg" alt="a list of typefaces used in the New York Post Redisgn. Fonts include: Heuristica, Franklin Gothic and Roboto">
+               <img src="images/new-york-post/responsive-typography.svg" alt="a list of typefaces used in the New York Post Redisgn. Fonts include: Heuristica, Franklin Gothic and Roboto">
                
            </section> <!-- end typography container -->
 
@@ -164,11 +164,11 @@
                
                <div class="gallery">
                
-                   <img src="images/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page">
+                   <img src="images/new-york-post/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page">
 
-                   <img src="images/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page">
+                   <img src="images/new-york-post/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page">
 
-                   <img src="images/responsive-mobile-dropshadow-03.png" alt="mobile sreen capture of the redesigned New York Post landing page">
+                   <img src="images/new-york-post/responsive-mobile-dropshadow-03.png" alt="mobile sreen capture of the redesigned New York Post landing page">
                
                </div>
 
@@ -186,11 +186,11 @@
                
                <div class="gallery">
                
-                   <img src="images/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed">
+                   <img src="images/new-york-post/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed">
 
-                   <img src="images/responsive-mobile-menu-02.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'sections' open">
+                   <img src="images/new-york-post/responsive-mobile-menu-02.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'sections' open">
 
-                   <img src="images/responsive-mobile-menu-03.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'search' bar open">
+                   <img src="images/new-york-post/responsive-mobile-menu-03.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'search' bar open">
 
                </div>
 

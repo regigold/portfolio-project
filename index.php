@@ -17,13 +17,11 @@
        
        <div class="wrapper">
        
-           <section class="intro container">
-               
-               <h3>Hi, I'm Tevis</h3>
-
-               <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+           <section class="project-gallery">
+              
+              <article class="project 01"></article> 
             
-           </section> <!-- end bio-intro container -->
+           </section> <!-- end project gallery -->
        
        </div>
         
