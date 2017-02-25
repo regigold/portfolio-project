@@ -1,0 +1,146 @@
+/* PROJECT PAGE
+======================================= */
+
+// general project page styles //
+
+.project-page {
+    
+    // header //
+    
+    header {
+        height: 60vh;
+        background-color: $responsive;
+    }
+
+    @media only screen and (min-width: 640px) {
+
+        header {
+            height: 70vh;
+        }
+
+    }
+
+    @media only screen and (min-width: 740px) {
+
+        header {
+            height: 60vh;
+        }
+
+    }
+     
+}
+
+// new york post page //
+
+#new-york-post-redesign {
+    
+    // navigation //
+    
+    nav svg:hover path {
+        fill: $black;
+    }
+    
+    nav ul {
+        background-color: $responsive;
+    }
+    
+    nav li a {
+        color: white;
+
+        &:hover,
+        &:focus {
+        background-color: tint( $responsive, 12% );
+        }
+
+        &:active {
+            background-color: shade( $responsive, 12% );
+        }
+
+    }
+    
+    @media only screen and (min-width: 640px) {
+        
+        nav ul {
+            background-color: transparent;
+        }
+        
+        nav li a {
+            border-bottom: 2px solid transparent;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: white;
+                background-color: transparent;
+                border-bottom: .19em solid $black;
+            }
+
+        }
+        
+    }
+    
+
+    // layout container //
+
+    .layout img {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
+    }
+
+    // typography //
+
+    .typography img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    // color palette //
+
+    .swatches {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .swatch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 265px;
+        height: 265px;
+        padding: 24px;
+    }
+
+    .swatch p {
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .swatch-01 {
+        background-color: #E1B451;
+    }
+
+    .swatch-02 {
+        background-color: #C09945;
+    }
+
+    .swatch-03 {
+        background-color: #231F20;
+    }
+    
+    // footer //
+    
+    footer a:hover,
+    footer a:focus {
+        color: $responsive;
+    }
+    
+    footer a:active {
+        color: shade( $responsive, 20% );
+    }
+
+}

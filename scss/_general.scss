@@ -11,6 +11,8 @@ $mont-bold: 'montserratbold';
 $mont-light: 'montserratlight';
 $hk-grotesk: 'hk_groteskregular';
 
+// test fonts //
+
 $mont-semi-bold: 'montserratsemibold';
 $mont-extra-light: 'montserratextralight';
 $mont-thin: 'montserratthin';
@@ -75,26 +77,9 @@ li{
 header {
     display: block;
     width: 100%;
-    height: 60vh;
-    background-color: $responsive;
     position: relative;
 }
 
-@media only screen and (min-width: 640px) {
-    
-    header {
-        height: 70vh;
-    }
-    
-}
-
-@media only screen and (min-width: 740px) {
-    
-    header {
-        height: 60vh;
-    }
-    
-}
 
 // navigation bar //
 
@@ -110,6 +95,11 @@ nav svg {
     z-index: 1000;
 }
 
+nav svg path {
+    fill: white;
+    transition: fill .3s ease-in-out;
+}
+
 nav ul {
     display: flex;
     width: 100%;
@@ -117,7 +107,7 @@ nav ul {
     z-index: 10000;
     bottom: 0;
     left: 0;
-    background-color: $responsive;
+    background-color: white;
 }
 
 nav li {
@@ -131,16 +121,12 @@ nav li a {
     font-family: $mont-bold;
     line-height: 50px;
     font-size: .85em;
-    color: white;
+    color: $black;
     letter-spacing: .125em;
-
-    &:hover {
-    background-color: tint( $responsive, 12% );
-    }
 
     &:active,
     &:focus {
-        background-color: shade( $responsive, 12% );
+        background-color: $highlight;
     }
     
 }
@@ -167,8 +153,8 @@ nav li a {
     nav li a {
         padding: 0 0 6px 0;
         line-height: normal;
-        font-size: .9em;
-        border-bottom: 2px solid transparent;
+        font-size: 1.125em;
+        border-bottom: .19em solid transparent;
         transition: border-color .3s;
         
         &:hover,
@@ -176,21 +162,12 @@ nav li a {
         &:focus {
             color: white;
             background-color: transparent;
-            border-bottom: .19em solid white;
+            border-bottom: .19em solid $highlight;
         }
         
     }
     
 }
-
-@media only screen and (min-width: 740px) {
-    
-    nav li a {
-        font-size: 1.125em;
-    }
-    
-}
-
 
 // project title text and images //
 
@@ -440,6 +417,19 @@ footer p {
     footer ul {
         float: right;
     }
+    
+    footer a {
+        transition: color .3s ease-in-out;
+    }
+    
+    footer a:hover,
+    footer a:focus {
+        color: $highlight;
+    }
+    
+    footer a:active {
+        color: shade( $highlight, 20% );
+    }
 }
 
 
@@ -452,7 +442,7 @@ footer p {
 
 // project pages //
 
-@import "pages/_project-pages";
+@import "pages/_project-page";
 
 
 // about page //

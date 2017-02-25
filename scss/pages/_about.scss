@@ -10,57 +10,37 @@
         background-color: transparent;
     }
     
-    nav svg path{
+    nav svg path {
         fill: $black;
-        transition: fill .3s ease-in-out;
     }
-
+    
     nav svg:hover path {
         fill: $highlight;
     }
     
-    // navigation bar //
-    
-    @media only screen and (min-width: 640px) {
-    
-        nav li a {
-            color: $black;
-
-            &:hover,
-            &:active,
-            &:focus {
-                color: $black;
-                //background-color: transparent;
-                border-bottom: .19em solid $black;
-            }
-
-        }
-        
+    nav li a {
+        color: $black;
     }
     
-    // introduction page //
+    // introduction //
     
-    @media only screen and (min-width: 900px) {
+    .intro p {
+        padding-right: 0;
+        margin-bottom: 100px;
+        max-width: 700px;
+    }
     
-        .intro {
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 175px;
-            margin-bottom: 175px;
-        }
-        
-        .intro h3 {
-            font-size: 2.125em;
-            color: $black;
-            margin-bottom: 30px;
-        }
+    .intro h3 {
+        font-size: 2.125em;
+        color: $black;
+        margin-bottom: 30px;
+    }
 
-        .intro p {
-            padding-right: 0;
-            margin-bottom: 100px;
-            width: 700px;
-        }
-
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 175px;
+        margin-bottom: 175px;
     }
     
 }    
