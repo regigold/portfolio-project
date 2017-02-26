@@ -8,7 +8,7 @@
                 <?php include_once 'include/nav.php'; // include nav ?>
                     <div class="title-text">
                         <h1>New York Post Landing Page</h1>
-                        <h2>Responsive Web Design</h2> </div> <img class="header-img" src="images/new-york-post/header-img-responsive-01.png" alt="mobile and desktop screen shots of the redesigned New York Post website"> </div>
+                        <h2>Responsive Web Design</h2> </div> <img class="header-img" src="images/new-york-post/new-york-post-header.png" alt="mobile and desktop screen shots of the redesigned New York Post website"> </div>
         </header>
         <!-- end header -->
         <main>
@@ -81,20 +81,28 @@
                     </div>
                 </section>
                 <!-- end color-palette container -->
-                <section class="feature-01 container">
+                <section class="responsive container">
                     <div class="description">
                         <h3>Responsive Web Design</h3>
                         <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
                     </div>
-                    <div class="gallery"> <img src="images/new-york-post/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page"> <img src="images/new-york-post/responsive-mobile-dropshadow-02.png" alt="mobile sreen capture of the redesigned New York Post landing page"> <img src="images/new-york-post/responsive-mobile-dropshadow-03.png" alt="mobile sreen capture of the redesigned New York Post landing page"> </div>
+                    <div class="gallery">
+                        <div><img src="images/new-york-post/new-york-post-mobile-01.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                        <div><img src="images/new-york-post/new-york-post-mobile-02.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                        <div><img src="images/new-york-post/new-york-post-mobile-03.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                    </div>
                 </section>
                 <!-- end responsive container -->
-                <section class="feature-02 container">
+                <section class="menu container">
                     <div class="description">
                         <h3>Bottom Oriented Menu Bar</h3>
                         <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
                     </div>
-                    <div class="gallery"> <img src="images/new-york-post/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed"> <img src="images/new-york-post/responsive-mobile-menu-02.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'sections' open"> <img src="images/new-york-post/responsive-mobile-menu-03.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'search' bar open"> </div>
+                    <div class="gallery">
+                        <div><img src="images/new-york-post/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed"></div>
+                        <div><img src="images/new-york-post/responsive-mobile-menu-02.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'sections' open"></div>
+                        <div><img src="images/new-york-post/responsive-mobile-menu-03.png" alt="mobile sreen capture showing the bottom oriented navigation with the 'search' bar open"></div>
+                    </div>
                 </section>
                 <!-- end menu container -->
             </div>

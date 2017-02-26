@@ -2,13 +2,14 @@
 <html lang="en">
 <?php include_once 'include/head.php'; // include head ?>
 
-    <body id="twd-landing-page" class="project-page">
-        <header>
+    <body id="javascript-jquery-page" class="project-page">
+        <header> <img class="header-img" src="images/javascript-jquery/javascript-jquery-header.png" alt="mobile screen shots of the Tevis Bateman's javascript and jquery tutorial site">
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
                     <div class="title-text">
-                        <h1>TWD Landing Page</h1>
-                        <h2>Introduction to jQuery</h2> </div> <img class="header-img" src="images/twd-landing-page/landing-page-header.png" alt="desktop screen shots of the Tevis Bateman's TWD landing page"> </div>
+                        <h1>JavaScript & jQuery Tutorial Site</h1>
+                        <h2>Three Helpful Javascript & jQuery Tutorials</h2> </div>
+            </div>
         </header>
         <!-- end header -->
         <main>
@@ -20,16 +21,16 @@
                             <h3>Tools</h3>
                             <ul>
                                 <li>Illustrator</li>
+                                <li>Photoshop</li>
                                 <li>HTML/CSS</li>
                                 <li>jQuery</li>
-                                <li>SASS</li>
                             </ul>
                         </div>
                         <div class="skills">
                             <h3>Skills</h3>
                             <ul>
                                 <li>Web Design</li>
-                                <li>UI / UX</li>
+                                <li>UI/UX</li>
                             </ul>
                         </div>
                     </div>
@@ -38,16 +39,6 @@
                     </div>
                 </section>
                 <!-- end project-intro container -->
-                <section class="layout container">
-                    <div class="description">
-                        <h3>Layout</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
-                    </div>
-                    <div class="gallery"> <img src="images/twd-landing-page/folders.png" alt="a series of multicoloured file folders overlapping diagonally">
-<!--                        <div class="equal-sign"></div> <img src="images/twd-landing-page/landing-page-desktop.png" alt="desktop view of Tevis Bateman's TWD landing page">-->
-                    </div>
-                </section>
-                <!-- end layout container -->
                 <section class="color-palette container">
                     <div class="description">
                         <h3>Colour Palette</h3>
@@ -55,66 +46,35 @@
                     </div>
                     <div class="swatches">
                         <div class="swatch swatch-01">
-                            <p>Salmon</p>
+                            <p>Sand</p>
                             <div class="swatch-codes">
-                                <p>HEX #F5AE70</p>
-                                <p>RGB 245, 174, 112</p>
+                                <p>HEX #DEB887</p>
+                                <p>RGB 222, 184, 135</p>
                             </div>
                         </div>
                         <div class="swatch swatch-02">
                             <p>Torquoise</p>
                             <div class="swatch-codes">
-                                <p>HEX #1FADA6</p>
-                                <p>RGB 31, 173, 166</p>
-                            </div>
-                        </div>
-                        <div class="swatch swatch-03">
-                            <p>Pink</p>
-                            <div class="swatch-codes">
-                                <p>HEX #FFB6C1</p>
-                                <p>RGB 255, 182, 193</p>
-                            </div>
-                        </div>
-                        <div class="swatch swatch-04">
-                            <p>Green</p>
-                            <div class="swatch-codes">
-                                <p>HEX #90EE90</p>
-                                <p>RGB 144, 238, 144</p>
-                            </div>
-                        </div>
-                        <div class="swatch swatch-05">
-                            <p>Yellow</p>
-                            <div class="swatch-codes">
-                                <p>HEX #FFFF80</p>
-                                <p>RGB 255, 255, 128</p>
-                            </div>
-                        </div>
-                        <div class="swatch swatch-06">
-                            <p>Red</p>
-                            <div class="swatch-codes">
-                                <p>HEX #FF6347</p>
-                                <p>RGB 255, 99, 71</p>
-                            </div>
-                        </div>
-                        <div class="swatch swatch-07">
-                            <p>Blue</p>
-                            <div class="swatch-codes">
-                                <p>HEX #4682B4</p>
-                                <p>RGB 70, 130, 180</p>
+                                <p>HEX #619EA1</p>
+                                <p>RGB 97, 158, 161</p>
                             </div>
                         </div>
                     </div>
                     <!-- end swatches -->
                 </section>
                 <!-- end color-palette container -->
-                <section class="accordian container">
+                <section class="responsive container">
                     <div class="description">
-                        <h3>Accordian Menu</h3>
+                        <h3>Responsive Web Design</h3>
                         <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
                     </div>
-                    <div class="gallery"> </div>
+                    <div class="gallery">
+                        <div><img src="images/javascript-jquery/javascript-jquery-mobile-01.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                        <div><img src="images/javascript-jquery/javascript-jquery-mobile-02.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                        <div><img src="images/javascript-jquery/javascript-jquery-mobile-03.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
+                    </div>
                 </section>
-                <!-- end accordian container -->
+                <!-- end responsive container -->
             </div>
         </main>
         <!-- end main -->
