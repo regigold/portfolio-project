@@ -1,72 +1,158 @@
 /* PROJECT PAGE
 ======================================= */
 
-// general project page styles //
+
+/* --- GENERAL PROJECT PAGE STYLES --- */
 
 .project-page {
-    
     // header //
-    
     header {
         height: 60vh;
-        background-color: $responsive;
     }
-
     @media only screen and (min-width: 640px) {
-
         header {
             height: 70vh;
         }
-
     }
-
     @media only screen and (min-width: 740px) {
-
         header {
             height: 60vh;
         }
-
     }
-     
+    // color palette //
+    .swatches {
+        display: flex;
+        flex-direction: column;
+    }
+    .swatch {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 250px;
+        height: 250px;
+        padding: 24px;
+    }
+    .swatch p {
+        text-transform: uppercase;
+        color: white;
+    }
+    .swatch > p {
+        font-weight: bold;
+    }
+    @media only screen and (min-width: 565px) {
+        .swatches {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 750px;
+            margin-top: 50px;
+        }
+    }
+    // introduction container //
+    .intro {
+        margin-top: 75px;
+    }
+
+    .intro p {
+        font-size: 1.125em; // 20px = 1.25em
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+
+    .intro li {
+        font-size: .95em;
+    }
+
+    .project-tools-skills {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .tools,
+    .skills {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 145px;
+        text-align: center;
+    }
+
+    .intro button {
+        display: block;
+        margin: 0 auto;
+        padding: 14px 18px;
+        font-family: $mont-semi-bold;
+        text-transform: uppercase;
+        font-size: 1.125em;
+        letter-spacing: .125em;
+        transition: all 0.5s ease;
+    }
+
+    #sticky.stick {
+        margin-top: 0 !important;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        font-size: .8em;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 900px) {
+        .intro {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 125px;
+            margin-bottom: 175px;
+        }
+        .intro p {
+            padding-right: 35px;
+            margin-bottom: 100px;
+            width: 70%;
+        }
+        .project-tools-skills {
+            align-self: flex-start;
+            width: 30%;
+            margin: 0;
+        }
+        #sticky-anchor {
+            width: 100%;
+        }
+    }
 }
 
-// new york post page //
+
+/* --- NEW YORK POST PAGE --- */
 
 #new-york-post-redesign {
-    
+    // header //
+    header {
+        background-color: $responsive;
+    }
     // navigation //
-    
     nav svg:hover path {
         fill: $black;
     }
-    
     nav ul {
         background-color: $responsive;
     }
-    
     nav li a {
         color: white;
-
         &:hover,
         &:focus {
-        background-color: tint( $responsive, 12% );
+            background-color: tint( $responsive, 12%);
         }
-
         &:active {
-            background-color: shade( $responsive, 12% );
+            background-color: shade( $responsive, 12%);
         }
-
     }
-    
     @media only screen and (min-width: 640px) {
-        
         nav ul {
             background-color: transparent;
         }
-        
         nav li a {
             border-bottom: 2px solid transparent;
-
             &:hover,
             &:active,
             &:focus {
@@ -74,73 +160,167 @@
                 background-color: transparent;
                 border-bottom: .19em solid $black;
             }
-
         }
-        
     }
-    
-
+    // content //
+    h3 {
+        color: $responsive;
+    }
+    // introduction container //
+    .intro button {
+        color: white;
+        background-color: $responsive;
+        &:hover {
+            background-color: tint( $responsive, 12%);
+        }
+        &:active,
+        &:focus {
+            background-color: shade( $responsive, 12%);
+        }
+    }
     // layout container //
-
     .layout img {
-        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
-        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.35);
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
     }
-
     // typography //
-
     .typography img {
         display: block;
         margin: 0 auto;
         max-width: 500px;
     }
-
     // color palette //
-
-    .swatches {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-
-    .swatch {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-basis: 265px;
-        height: 265px;
-        padding: 24px;
-    }
-
-    .swatch p {
-        text-transform: uppercase;
-        color: white;
-    }
-
     .swatch-01 {
         background-color: #E1B451;
     }
-
     .swatch-02 {
         background-color: #C09945;
     }
-
     .swatch-03 {
         background-color: #231F20;
     }
-    
     // footer //
-    
     footer a:hover,
     footer a:focus {
         color: $responsive;
     }
-    
     footer a:active {
-        color: shade( $responsive, 20% );
+        color: shade( $responsive, 20%);
     }
+}
 
+
+/* --- TWD LANDING PAGE --- */
+
+#twd-landing-page {
+    // header //
+    header {
+        background-color: $landing-page;
+    }
+    // navigation //
+    nav svg:hover path {
+        fill: $black;
+    }
+    nav ul {
+        background-color: $landing-page;
+    }
+    nav li a {
+        color: white;
+        &:hover,
+        &:focus {
+            background-color: tint( $landing-page, 12%);
+        }
+        &:active {
+            background-color: shade( $landing-page, 12%);
+        }
+    }
+    @media only screen and (min-width: 640px) {
+        nav ul {
+            background-color: transparent;
+        }
+        nav li a {
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                color: white;
+                background-color: transparent;
+                border-bottom: .19em solid $black;
+            }
+        }
+    }
+    // content //
+    h3 {
+        color: $landing-page;
+    }
+    // introduction container //
+    .intro button {
+        color: white;
+        background-color: $landing-page;
+        &:hover {
+            background-color: tint( $landing-page, 12%);
+        }
+        &:active,
+        &:focus {
+            background-color: shade( $landing-page, 12%);
+        }
+    }
+    // layout //
+    .layout .gallery {
+        display: flex;
+        align-items: center;
+        width: 120%;
+    }
+    .equal-sign {
+        display: block;
+        width: 60px;
+        height: 12px;
+        background-color: $black;
+        margin-bottom: 30px;
+    }
+    .equal-sign::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 12px;
+        margin-top: 30px;
+        background-color: $black;
+    }
+    // color palette //
+    .swatch-01 {
+        background-color: #F5AE70;
+    }
+    .swatch-02 {
+        background-color: #1FADA6;
+    }
+    .swatch-03 {
+        background-color: #FFB6C1;
+    }
+    .swatch-04 {
+        background-color: #90EE90;
+        p {
+            color: $black;
+        }
+    }
+    .swatch-05 {
+        background-color: #FFFF80;
+        p {
+            color: $black;
+        }
+    }
+    .swatch-06 {
+        background-color: #FF6347;
+    }
+    .swatch-07 {
+        background-color: #4682B4;
+    }
+    // footer //
+    footer a:hover,
+    footer a:focus {
+        color: $landing-page;
+    }
+    footer a:active {
+        color: shade( $landing-page, 20%);
+    }
 }

@@ -138,8 +138,7 @@ h3 {
   font-family: "montserratsemibold";
   font-size: 1.25em;
   line-height: 30px;
-  letter-spacing: .125em;
-  color: #E1b451; }
+  letter-spacing: .125em; }
 
 p,
 li {
@@ -212,7 +211,7 @@ nav li a {
   nav li a {
     padding: 0 0 6px 0;
     line-height: normal;
-    font-size: 1.125em;
+    font-size: 1.1em;
     border-bottom: .19em solid transparent;
     transition: border-color .3s; }
     nav li a:hover, nav li a:active, nav li a:focus {
@@ -294,77 +293,6 @@ nav li a {
 
   .container .description p {
     margin-bottom: 100px; } }
-/* ---------------------------------------
-   INTRODUCTION CONTAINTER
---------------------------------------- */
-.intro {
-  margin-top: 75px; }
-
-.intro p {
-  font-size: 1.125em;
-  line-height: 32px;
-  margin-bottom: 50px; }
-
-.intro li {
-  font-size: .95em; }
-
-.project-tools-skills {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px; }
-
-.tools,
-.skills {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 145px;
-  text-align: center; }
-
-.intro button {
-  display: block;
-  margin: 0 auto;
-  padding: 14px 18px;
-  font-family: "montserratsemibold";
-  text-transform: uppercase;
-  font-size: 1.125em;
-  letter-spacing: .125em;
-  color: white;
-  background-color: #E1b451;
-  transition: all 0.5s ease; }
-  .intro button:hover {
-    background-color: #e5bd66; }
-  .intro button:active, .intro button:focus {
-    background-color: #c69e47; }
-
-#sticky.stick {
-  margin-top: 0 !important;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  font-size: .8em;
-  width: 100%;
-  text-align: center; }
-
-@media only screen and (min-width: 900px) {
-  .intro {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 125px;
-    margin-bottom: 175px; }
-
-  .intro p {
-    padding-right: 35px;
-    margin-bottom: 100px;
-    width: 70%; }
-
-  .project-tools-skills {
-    align-self: flex-start;
-    width: 30%;
-    margin: 0; }
-
-  #sticky-anchor {
-    width: 100%; } }
 /* ---------------------------------------
    FOOTER STYLES 
 --------------------------------------- */
@@ -480,16 +408,93 @@ footer p {
 
 /* PROJECT PAGE
 ======================================= */
+/* --- GENERAL PROJECT PAGE STYLES --- */
 .project-page header {
-  height: 60vh;
-  background-color: #E1b451; }
+  height: 60vh; }
 @media only screen and (min-width: 640px) {
   .project-page header {
     height: 70vh; } }
 @media only screen and (min-width: 740px) {
   .project-page header {
     height: 60vh; } }
+.project-page .swatches {
+  display: flex;
+  flex-direction: column; }
+.project-page .swatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 250px;
+  padding: 24px; }
+.project-page .swatch p {
+  text-transform: uppercase;
+  color: white; }
+.project-page .swatch > p {
+  font-weight: bold; }
+@media only screen and (min-width: 565px) {
+  .project-page .swatches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin-top: 50px; } }
+.project-page .intro {
+  margin-top: 75px; }
+.project-page .intro p {
+  font-size: 1.125em;
+  line-height: 32px;
+  margin-bottom: 50px; }
+.project-page .intro li {
+  font-size: .95em; }
+.project-page .project-tools-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+.project-page .tools,
+.project-page .skills {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 145px;
+  text-align: center; }
+.project-page .intro button {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 18px;
+  font-family: "montserratsemibold";
+  text-transform: uppercase;
+  font-size: 1.125em;
+  letter-spacing: .125em;
+  transition: all 0.5s ease; }
+.project-page #sticky.stick {
+  margin-top: 0 !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  font-size: .8em;
+  width: 100%;
+  text-align: center; }
+@media only screen and (min-width: 900px) {
+  .project-page .intro {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-bottom: 175px; }
+  .project-page .intro p {
+    padding-right: 35px;
+    margin-bottom: 100px;
+    width: 70%; }
+  .project-page .project-tools-skills {
+    align-self: flex-start;
+    width: 30%;
+    margin: 0; }
+  .project-page #sticky-anchor {
+    width: 100%; } }
 
+/* --- NEW YORK POST PAGE --- */
+#new-york-post-redesign header {
+  background-color: #E1b451; }
 #new-york-post-redesign nav svg:hover path {
   fill: #231F20; }
 #new-york-post-redesign nav ul {
@@ -509,6 +514,15 @@ footer p {
       color: white;
       background-color: transparent;
       border-bottom: 0.19em solid #231F20; } }
+#new-york-post-redesign h3 {
+  color: #E1b451; }
+#new-york-post-redesign .intro button {
+  color: white;
+  background-color: #E1b451; }
+  #new-york-post-redesign .intro button:hover {
+    background-color: #e5bd66; }
+  #new-york-post-redesign .intro button:active, #new-york-post-redesign .intro button:focus {
+    background-color: #c69e47; }
 #new-york-post-redesign .layout img {
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
@@ -517,22 +531,6 @@ footer p {
   display: block;
   margin: 0 auto;
   max-width: 500px; }
-#new-york-post-redesign .swatches {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px; }
-#new-york-post-redesign .swatch {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 265px;
-  height: 265px;
-  padding: 24px; }
-#new-york-post-redesign .swatch p {
-  text-transform: uppercase;
-  color: white; }
 #new-york-post-redesign .swatch-01 {
   background-color: #E1B451; }
 #new-york-post-redesign .swatch-02 {
@@ -544,6 +542,78 @@ footer p {
   color: #E1b451; }
 #new-york-post-redesign footer a:active {
   color: #b49041; }
+
+/* --- TWD LANDING PAGE --- */
+#twd-landing-page header {
+  background-color: #F5AE70; }
+#twd-landing-page nav svg:hover path {
+  fill: #231F20; }
+#twd-landing-page nav ul {
+  background-color: #F5AE70; }
+#twd-landing-page nav li a {
+  color: white; }
+  #twd-landing-page nav li a:hover, #twd-landing-page nav li a:focus {
+    background-color: #f6b881; }
+  #twd-landing-page nav li a:active {
+    background-color: #d89963; }
+@media only screen and (min-width: 640px) {
+  #twd-landing-page nav ul {
+    background-color: transparent; }
+  #twd-landing-page nav li a {
+    border-bottom: 2px solid transparent; }
+    #twd-landing-page nav li a:hover, #twd-landing-page nav li a:active, #twd-landing-page nav li a:focus {
+      color: white;
+      background-color: transparent;
+      border-bottom: 0.19em solid #231F20; } }
+#twd-landing-page h3 {
+  color: #F5AE70; }
+#twd-landing-page .intro button {
+  color: white;
+  background-color: #F5AE70; }
+  #twd-landing-page .intro button:hover {
+    background-color: #f6b881; }
+  #twd-landing-page .intro button:active, #twd-landing-page .intro button:focus {
+    background-color: #d89963; }
+#twd-landing-page .layout .gallery {
+  display: flex;
+  align-items: center;
+  width: 120%; }
+#twd-landing-page .equal-sign {
+  display: block;
+  width: 60px;
+  height: 12px;
+  background-color: #231F20;
+  margin-bottom: 30px; }
+#twd-landing-page .equal-sign::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 12px;
+  margin-top: 30px;
+  background-color: #231F20; }
+#twd-landing-page .swatch-01 {
+  background-color: #F5AE70; }
+#twd-landing-page .swatch-02 {
+  background-color: #1FADA6; }
+#twd-landing-page .swatch-03 {
+  background-color: #FFB6C1; }
+#twd-landing-page .swatch-04 {
+  background-color: #90EE90; }
+  #twd-landing-page .swatch-04 p {
+    color: #231F20; }
+#twd-landing-page .swatch-05 {
+  background-color: #FFFF80; }
+  #twd-landing-page .swatch-05 p {
+    color: #231F20; }
+#twd-landing-page .swatch-06 {
+  background-color: #FF6347; }
+#twd-landing-page .swatch-07 {
+  background-color: #4682B4; }
+#twd-landing-page footer a:hover,
+#twd-landing-page footer a:focus {
+  color: #F5AE70; }
+#twd-landing-page footer a:active {
+  color: #c48b5a; }
 
 /* ABOUT PAGE 
 ======================================= */
