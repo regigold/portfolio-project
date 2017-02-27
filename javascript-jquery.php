@@ -34,9 +34,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="sticky-anchor">
-                        <button id="sticky">Visit Live Site</button>
-                    </div>
+                    <div id="sticky-anchor"></div>
+                        <a href="#" id="sticky" class="out-link" >Visit Live Site</a>
                 </section>
                 <!-- end project-intro container -->
                 <section class="color-palette container">
@@ -63,6 +62,12 @@
                     <!-- end swatches -->
                 </section>
                 <!-- end color-palette container -->
+                <section class="typography container">
+                    <div class="description">
+                        <h3>Typography</h3>
+                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                    </div> <img src="images/javascript-jquery/javascript-jquery-typography.svg" alt="a list of typefaces used in Tevis Bateman's javascript and jquery site. Fonts include: Bungee and Open Sans"> </section>
+                <!-- end typography container -->
                 <section class="responsive container">
                     <div class="description">
                         <h3>Responsive Web Design</h3>
@@ -75,6 +80,27 @@
                     </div>
                 </section>
                 <!-- end responsive container -->
+                <section class="menu container">
+                    <div class="description">
+                        <h3>Horizontal Slider Menu</h3>
+                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                    </div>
+                    <div class="code-demo">
+                        <nav class="site-nav-bar">
+                            <ul>
+                                <li class="slide-out"><a class="slide-btn" href="#scroll-step-01">button 01 <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 16px; padding-left: 5px;"></i></a>
+                                    <ul class="step-menu">
+                                        <li><a class="scroll-step-01" href="#scroll-step-01">Step 01</a></li>
+                                        <li><a class="scroll-step-02" href="#scroll-step-02">Step 02</a></li>
+                                        <li><a class="scroll-step-03" href="#scroll-step-03">Step 03</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a class="out-link" href="http://codepen.io/tevis-bateman/pen/evNpqE">View Code Pen</a>
+                </section>
+                <!-- end responsive container -->
             </div>
         </main>
         <!-- end main -->
@@ -82,6 +108,8 @@
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
             <script src="scripts/sticky-nav.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
+            <script src="scripts/javascript-jquery-code-demo.js" type="text/javascript"></script>
     </body>
 
 </html>

@@ -33,9 +33,15 @@
         .swatches {
             display: flex;
             flex-direction: row;
+            align-items: center;
             flex-wrap: wrap;
-            max-width: 750px;
+            max-width: 500px;
             margin-top: 50px;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        .swatches {
+            max-width: 750px;
         }
     }
     // introduction container //
@@ -62,8 +68,8 @@
         flex-basis: 145px;
         text-align: center;
     }
-    .intro button {
-        display: block;
+    .out-link {
+        display: inline-block;
         margin: 0 auto;
         padding: 14px 18px;
         font-family: $mont-semi-bold;
@@ -103,9 +109,15 @@
             width: 100%;
         }
     }
+    // typography container //
+    .typography img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
     // container gallery  //
     .container .gallery img {
-        max-width: 320px;
+        max-width: 300px;
     }
 }
 
@@ -118,13 +130,13 @@
         background-color: $responsive;
     }
     // navigation //
-    nav svg:hover path {
+    .main-nav svg:hover path {
         fill: $black;
     }
-    nav ul {
+    .main-nav ul {
         background-color: $responsive;
     }
-    nav li a {
+    .main-nav li a {
         color: white;
         &:hover,
         &:focus {
@@ -135,10 +147,10 @@
         }
     }
     @media only screen and (min-width: 640px) {
-        nav ul {
+        .main-nav ul {
             background-color: transparent;
         }
-        nav li a {
+        .main-nav li a {
             border-bottom: 2px solid transparent;
             &:hover,
             &:active,
@@ -154,7 +166,7 @@
         color: $responsive;
     }
     // introduction container //
-    .intro button {
+    .intro .out-link {
         color: white;
         background-color: $responsive;
         &:hover {
@@ -165,17 +177,11 @@
             background-color: shade( $responsive, 12%);
         }
     }
-    // layout container //
-    .layout img {
+    // inspiration container //
+    .inspiration img {
         -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
-    }
-    // typography container //
-    .typography img {
-        display: block;
-        margin: 0 auto;
-        max-width: 500px;
     }
     // color palette container //
     .swatch-01 {
@@ -206,13 +212,13 @@
         background-color: $landing-page;
     }
     // navigation //
-    nav svg:hover path {
+    .main-nav svg:hover path {
         fill: $black;
     }
-    nav ul {
+    .main-nav ul {
         background-color: $landing-page;
     }
-    nav li a {
+    .main-nav li a {
         color: white;
         &:hover,
         &:focus {
@@ -223,10 +229,10 @@
         }
     }
     @media only screen and (min-width: 640px) {
-        nav ul {
+        .main-nav ul {
             background-color: transparent;
         }
-        nav li a {
+        .main-nav li a {
             border-bottom: 2px solid transparent;
             &:hover,
             &:active,
@@ -242,7 +248,7 @@
         color: $landing-page;
     }
     // introduction container //
-    .intro button {
+    .intro .out-link {
         color: white;
         background-color: $landing-page;
         &:hover {
@@ -321,13 +327,13 @@
         background-color: $js-page;
     }
     // navigation //
-    nav svg:hover path {
+    .main-nav svg:hover path {
         fill: $black;
     }
-    nav ul {
+    .main-nav ul {
         background-color: $js-page;
     }
-    nav li a {
+    .main-nav li a {
         color: white;
         &:hover,
         &:focus {
@@ -338,10 +344,10 @@
         }
     }
     @media only screen and (min-width: 640px) {
-        nav ul {
+        .main-nav ul {
             background-color: transparent;
         }
-        nav li a {
+        .main-nav li a {
             border-bottom: 2px solid transparent;
             &:hover,
             &:active,
@@ -357,7 +363,7 @@
         color: $js-page;
     }
     // introduction container //
-    .intro button {
+    .intro .out-link {
         color: white;
         background-color: $js-page;
         &:hover {
@@ -368,7 +374,7 @@
             background-color: shade( $js-page, 12%);
         }
     }
-    // color palette //
+    // color palette container //
     .swatch-01 {
         background-color: #DEB887;
     }
@@ -377,6 +383,102 @@
     }
     .swatch-03 {
         background-color: #FFB6C1;
+    }
+    // menu container //
+    .code-demo {
+        display: none;
+    }
+    @media only screen and (min-width: 540px) {
+        .code-demo {
+            display: flex;
+            justify-content: flex-end;
+            width: 475px;
+            background-color: cadetblue;
+            -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+            .site-nav-bar {
+                padding-top: 0;
+                & ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 60px;
+                    padding-top: 0;
+                }
+                & li {
+                    margin-left: 0;
+                }
+                & a {
+                    display: block;
+                    width: 175px;
+                    line-height: 60px;
+                    font-weight: 700;
+                    text-align: center;
+                    text-decoration: none;
+                    letter-spacing: 2px;
+                    font-family: 'Open Sans', sans-serif;
+                    text-transform: uppercase;
+                    color: burlywood;
+                    font-size: 14px;
+                }
+            }
+            .slide-out {
+                display: flex;
+                & > a,
+                & > a:focus {
+                    background-color: burlywood;
+                    color: cadetblue;
+                    line-height: 60px;
+                    border: none;
+                }
+                & > a:hover {
+                    background-color: #e4c69f;
+                }
+            }
+            .step-menu {
+                overflow: hidden;
+                width: auto;
+            }
+            .step-menu li {
+                display: block;
+                width: 100px;
+                background-color: #e1be91;
+                text-align: center;
+                &:first-child {
+                    border-left: 2px solid #e4c69f;
+                    padding-left: 18px;
+                }
+                &:last-child {
+                    border-right: 2px solid #e4c69f;
+                    padding-right: 18px;
+                }
+            }
+            .step-menu li a {
+                display: inline;
+                color: cadetblue;
+                border-left: none;
+                font-size: 12px;
+                padding-bottom: 2px;
+                &:hover,
+                &:focus {
+                    border-bottom: 2px solid cadetblue;
+                }
+            }
+        }
+    }
+    .menu .out-link {
+        margin-top: 50px;
+        padding: 0 0 7px 0;
+        border-bottom: .19em solid $black;
+        color: $js-page;
+        transition: border-color .3s ease-in-out;
+        &:hover {
+            border-bottom: .19em solid $js-page;
+        }
+        &:active,
+        &:focus {
+            border-bottom: .19em solid $js-page;
+        }
     }
     // footer //
     footer a:hover,

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 307.5 208.6" style="enable-background:new 0 0 307.5 208.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#818181;}
+	.st1{fill:#231F20;}
+	.st2{font-family:'HKGrotesk-Regular';}
+	.st3{font-size:14px;}
+	.st4{fill:none;}
+	.st5{font-family:'Bungee-Regular';}
+	.st6{font-size:24px;}
+	.st7{letter-spacing:1;}
+	.st8{font-family:'OpenSans-Bold';}
+	.st9{font-family:'OpenSans';}
+</style>
+<g id="XMLID_66_">
+	<text id="XMLID_86_" transform="matrix(1.0308 0 0 1 -442.6836 45.1064)" class="st0 st2 st3">FEATURED ARTICLE HEADLINE — 40px</text>
+	<rect id="XMLID_85_" x="-443" y="3.4" class="st4" width="375.5" height="26.6"/>
+	<text id="XMLID_84_" transform="matrix(1 0 0 1 -443 21.168)" class="st1 st6 st7" style="font-family:'Heuristica-BoldItalic';">Heuristica Bold Italic</text>
+	<text id="XMLID_83_" transform="matrix(1.0308 0 0 1 -442.6836 125.1064)" class="st0 st2 st3">ARTICLE HEADLINE — 24px </text>
+	<rect id="XMLID_82_" x="-443" y="88.4" class="st4" width="325" height="26.6"/>
+	
+		<text id="XMLID_81_" transform="matrix(1 0 0 1 -443 105.4004)" class="st1 st6 st7" style="font-family:'FranklinGothic-DemiCond';">Franklin Gothic Demi Cond</text>
+	<text id="XMLID_80_" transform="matrix(1.0308 0 0 1 -442.6836 237.1064)" class="st0 st2 st3">ARTICLE TEXT — 14px</text>
+	<g id="XMLID_75_">
+		<rect id="XMLID_216_" x="-443" y="195.4" class="st4" width="325" height="26.6"/>
+		<text id="XMLID_215_" transform="matrix(1 0 0 1 -443 213.168)" class="st1 st6" style="font-family:'Heuristica-Regular';">Heuristica Regular</text>
+	</g>
+	<g id="XMLID_70_">
+		<rect id="XMLID_218_" x="-443" y="166.4" class="st4" width="325" height="26.6"/>
+		<text id="XMLID_217_" transform="matrix(1 0 0 1 -443 184.168)" class="st1 st6" style="font-family:'Heuristica-BoldItalic';">Heuristica Bold Italic</text>
+	</g>
+	<text id="XMLID_69_" transform="matrix(1.0308 0 0 1 -442.6836 318.1064)" class="st0 st2 st3">BUTTONS — 16px</text>
+	<rect id="XMLID_68_" x="-443" y="276.4" class="st4" width="325" height="26.6"/>
+	<text id="XMLID_67_" transform="matrix(1 0 0 1 -443 294.3604)" class="st1 st6 st7" style="font-family:'Roboto-Light';">Roboto Light</text>
+</g>
+<g id="XMLID_2_">
+	<text transform="matrix(1.0308 0 0 1 0.3164 45.1064)" class="st0 st2 st3">HEADLINE — 40px</text>
+	<rect id="XMLID_5_" x="0" y="3.4" class="st4" width="237.5" height="26.6"/>
+	<text transform="matrix(1 0 0 1 0 20.6401)" class="st1 st5 st6 st7">Bungee</text>
+	<text transform="matrix(1.0308 0 0 1 0.3164 125.1064)" class="st0 st2 st3">MENU ITEMS — 16px </text>
+	<rect id="XMLID_4_" x="0" y="88.4" class="st4" width="325" height="26.6"/>
+	<text transform="matrix(1 0 0 1 0 106.6001)" class="st1 st8 st6 st7">OPEN SANS BOLD</text>
+	<text id="XMLID_73_" transform="matrix(1.0308 0 0 1 0.3164 205.1064)" class="st0 st2 st3">SUB-HEADLINE + TEXT — 16px </text>
+	<rect id="XMLID_1_" x="0" y="168.4" class="st4" width="325" height="26.6"/>
+	<text id="XMLID_71_" transform="matrix(1 0 0 1 0 186.6001)" class="st1 st9 st6 st7">OPEN SANS / Open Sans</text>
+</g>
+</svg>

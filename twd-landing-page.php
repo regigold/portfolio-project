@@ -33,21 +33,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="sticky-anchor">
-                        <button id="sticky">Visit Live Site</button>
-                    </div>
+                    <div id="sticky-anchor"></div>
+                        <a href="#" id="sticky" class="out-link" >Visit Live Site</a>
                 </section>
                 <!-- end project-intro container -->
-                <section class="layout container">
+                <section class="inspiration container">
                     <div class="description">
-                        <h3>Layout</h3>
+                        <h3>Starting Point</h3>
                         <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
                     </div>
-                    <div class="gallery"> <img src="images/twd-landing-page/folders.png" alt="a series of multicoloured file folders overlapping diagonally">
-<!--                        <div class="equal-sign"></div> <img src="images/twd-landing-page/landing-page-desktop.png" alt="desktop view of Tevis Bateman's TWD landing page">-->
-                    </div>
+                     <img src="images/twd-landing-page/folders.png" alt="a series of multicoloured file folders overlapping diagonally">
                 </section>
-                <!-- end layout container -->
+                <!-- end inspiration container -->
                 <section class="color-palette container">
                     <div class="description">
                         <h3>Colour Palette</h3>
@@ -122,6 +119,7 @@
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
             <script src="scripts/sticky-nav.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
     </body>
 
 </html>
