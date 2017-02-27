@@ -32,8 +32,10 @@
     
     .intro h3 {
         font-size: 2.125em;
+        line-height: 1.45em;
         color: $black;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .intro {
@@ -61,7 +63,7 @@
     }
 
     #contact-area textarea {
-        height: 90px;
+        height: 200px;
     }
 
     #contact-area textarea:focus, #contact-area input:focus {
@@ -70,12 +72,12 @@
 
     #contact-area input.submit-button {
         display: block;
-        width: 175px;
+        width: 120px;
         float: right;
         padding: 12px 0;
         font-family: $mont-semi-bold;
         text-transform: uppercase;
-        font-size: 1.125em;
+        font-size: 1em;
         letter-spacing: .125em;
         color: white;
         background-color: $black;
@@ -86,6 +88,13 @@
         &:hover,
         &:focus {
             background-color: $highlight;
+        }
+    }
+    
+    @media only screen and (min-width: 600px) {
+        #contact-area input.submit-button {
+            width: 175px;
+            font-size: 1.125em;
         }
     }
 
@@ -99,3 +108,12 @@
     }
     
 }    
+
+// thank you page //
+
+.thanks {
+    main {
+        height: 46vh;
+    }    
+}
+

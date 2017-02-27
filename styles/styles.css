@@ -761,8 +761,10 @@ h3 {
   max-width: 700px; }
 #contact .intro h3 {
   font-size: 2.125em;
+  line-height: 1.45em;
   color: #231F20;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  text-align: center; }
 #contact .intro {
   flex-direction: column;
   justify-content: center;
@@ -780,17 +782,17 @@ h3 {
   margin: 0px 0px 30px 0px;
   border: 2px solid #ccc; }
 #contact #contact-area textarea {
-  height: 90px; }
+  height: 200px; }
 #contact #contact-area textarea:focus, #contact #contact-area input:focus {
   border: 2px solid #00A99D; }
 #contact #contact-area input.submit-button {
   display: block;
-  width: 175px;
+  width: 120px;
   float: right;
   padding: 12px 0;
   font-family: "montserratsemibold";
   text-transform: uppercase;
-  font-size: 1.125em;
+  font-size: 1em;
   letter-spacing: .125em;
   color: white;
   background-color: #231F20;
@@ -799,6 +801,10 @@ h3 {
   transition: all 0.5s ease; }
   #contact #contact-area input.submit-button:hover, #contact #contact-area input.submit-button:focus {
     background-color: #00A99D; }
+@media only screen and (min-width: 600px) {
+  #contact #contact-area input.submit-button {
+    width: 175px;
+    font-size: 1.125em; } }
 #contact label {
   float: left;
   width: 100px;
@@ -806,5 +812,8 @@ h3 {
   font-family: "montserratsemibold";
   font-size: 1em;
   text-transform: uppercase; }
+
+.thanks main {
+  height: 46vh; }
 
 /*# sourceMappingURL=styles.css.map */
