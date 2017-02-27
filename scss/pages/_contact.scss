@@ -1,0 +1,101 @@
+/* CONTACT PAGE 
+======================================= */
+
+#contact {
+
+    // header //
+
+    header {
+        height: auto;
+        background-color: transparent;
+    }
+    
+    nav svg path {
+        fill: $black;
+    }
+    
+    nav svg:hover path {
+        fill: $highlight;
+    }
+    
+    nav li a {
+        color: $black;
+    }
+    
+    // introduction //
+    
+    .intro p {
+        padding-right: 0;
+        margin-bottom: 100px;
+        max-width: 700px;
+    }
+    
+    .intro h3 {
+        font-size: 2.125em;
+        color: $black;
+        margin-bottom: 50px;
+    }
+
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 175px;
+        margin-bottom: 175px;
+    }
+    
+    // form //
+    
+    #contact-area {
+        max-width: 600px;
+        margin-top: 25px;
+    }
+    
+    #contact-area input, #contact-area textarea {
+        padding: 10px 20px;
+        width: 100%;
+        font-family: $hk-grotesk;
+        font-size: 1.2em;
+        letter-spacing: .085em;
+        margin: 0px 0px 30px 0px;
+        border: 2px solid #ccc;
+    }
+
+    #contact-area textarea {
+        height: 90px;
+    }
+
+    #contact-area textarea:focus, #contact-area input:focus {
+        border: 2px solid $highlight;
+    }
+
+    #contact-area input.submit-button {
+        display: block;
+        width: 175px;
+        float: right;
+        padding: 12px 0;
+        font-family: $mont-semi-bold;
+        text-transform: uppercase;
+        font-size: 1.125em;
+        letter-spacing: .125em;
+        color: white;
+        background-color: $black;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        
+        &:hover,
+        &:focus {
+            background-color: $highlight;
+        }
+    }
+
+    label {
+        float: left;
+        width: 100px;
+        padding-bottom: 10px;
+        font-family: $mont-semi-bold;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    
+}    

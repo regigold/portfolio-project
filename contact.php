@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include_once 'include/head.php'; // include head ?>
 
-    <body id="about">
+    <body id="contact">
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
@@ -12,7 +12,23 @@
             <div class="wrapper">
                 <section class="intro container">
                     <h3>Give me a shout!</h3>
-                    <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                    <div id="contact-area">
+			
+                        <form method="post" action="contactengine.php">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="Name" />
+
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email" />
+
+                            <label for="Message">Message</label><br />
+                            <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+                            <input type="submit" name="submit" value="Submit" class="submit-button" />
+                        </form>
+
+                        <div style="clear: both;"></div>
+                        
                 </section>
                 <!-- end bio-intro container -->
             </div>

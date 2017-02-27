@@ -9,6 +9,14 @@
     header {
         height: 60vh;
     }
+    .header-img {
+        display: block;
+        min-width: 1145px;
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+        opacity: .5;
+    }
     // color palette //
     .swatches {
         display: flex;

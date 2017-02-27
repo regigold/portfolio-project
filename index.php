@@ -11,20 +11,28 @@
         <main>
             <div class="wrapper">
                 <section class="project-gallery">
-                    <!--
-                    <article>
-    <a href="#" class="project test01"> <img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage"> <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version"></a>
-</article>
-<article>
-    <a href="#" class="project test02"> <img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage"> <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version"></a>
-</article>
--->
-                    <article>
-                        <a href="#" class="project p01"><img src="images/work/new-york-post-desktop.jpg" alt="desktop thumbnail of the redesigned New York Post homepage"> <img src="images/work/new-york-post-mobile.jpg" alt="mobile thumbnail of the redesigned New York Post homepage, overlapping the desktop version"> </a>
-                    </article>
-                    <article>
-                        <a href="#" class="project p02"><img src="images/twd-landing-page/landing-page-desktop.png" alt="desktop thumbnail of the Tevis Bateman's TWD landing page"> </a>
-                    </article>
+                
+                <article>
+                    <a href="new-york-post-redesign.php" class="project p01">
+                        <img src="images/work/new-york-post-01.png" alt="Thumbnail of Tevis Bateman's New York Post redesign project">
+                    </a>
+                    <h3>New York Post Redesign</h3>
+                </article>
+                
+                <article>
+                    <a href="twd-landing-page.php" class="project p02">
+                        <img src="images/work/twd-landing-page-02.png" alt="Thumbnail of Tevis Bateman's TWD landing page project">
+                    </a>
+                    <h3>TWD Landing Page</h3>
+                </article>
+                
+                <article>
+                    <a href="javascript-jquery.php" class="project p03">
+                        <img src="images/work/javascript-jquery-01.png" alt="Thumbnail of Tevis Bateman's javascript and jquery tutorial project">
+                    </a>
+                    <h3>JavaScript &amp; Jquery Tutorials</h3>
+                </article>
+                
                 </section>
                 <!-- end project gallery -->
             </div>

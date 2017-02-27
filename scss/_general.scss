@@ -4,15 +4,13 @@ $highlight: #00A99D;
 $responsive: #E1b451;
 $landing-page: #F5AE70;
 $js-page: #619EA1;
+
 // fonts //
 $mont-extra-bold: 'montserratextrabold';
-$mont-bold: 'montserratbold';
-$mont-light: 'montserratlight';
 $hk-grotesk: 'hk_groteskregular';
-// test fonts //
 $mont-semi-bold: 'montserratsemibold';
 $mont-extra-light: 'montserratextralight';
-$mont-thin: 'montserratthin';
+
 
 /* ---------------------------------------
    GENERAL STYLES 
@@ -71,15 +69,6 @@ header {
     overflow: hidden;
 }
 
-.header-img {
-    display: block;
-    min-width: 1145px;
-    position: absolute;
-    bottom: 0;
-    right: -100px;
-    opacity: .5;
-}
-
 .main-nav {
     display: flex;
     justify-content: flex-end;
@@ -116,9 +105,9 @@ header {
 
 .main-nav li a {
     display: block;
-    font-family: $mont-bold;
+    font-family: $mont-semi-bold;
     line-height: 50px;
-    font-size: .85em;
+    font-size: 1em;
     color: $black;
     letter-spacing: .125em;
     &:active,
@@ -280,10 +269,11 @@ footer a {
 }
 
 footer p {
+    font-family: $mont-extra-light;
     font-size: .75em;
     color: white;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
 }
 
 @media only screen and (min-width: 640px) {
@@ -317,3 +307,4 @@ footer p {
 // about page //
 @import "pages/_about";
 // contact //
+@import "pages/_contact";
