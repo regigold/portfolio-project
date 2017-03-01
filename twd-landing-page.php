@@ -14,7 +14,7 @@
         <main>
             <div class="wrapper">
                 <section class="intro container">
-                    <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                    <p>The TWD landing page was designed to house all projects completed during the Technical Web Design program at BCIT. The page was designed as completed framework that could be updated to show case projects as we progressed through the program. Inspired by accordion menus and file folders, I decided to base my design on a simple hide-and-show interaction. Creating the functionality was my first experience using jQuery.</p>
                     <div class="project-tools-skills">
                         <div class="tools">
                             <h3>Tools</h3>
@@ -22,7 +22,6 @@
                                 <li>Illustrator</li>
                                 <li>HTML/CSS</li>
                                 <li>jQuery</li>
-                                <li>SASS</li>
                             </ul>
                         </div>
                         <div class="skills">
@@ -40,7 +39,7 @@
                 <section class="inspiration container">
                     <div class="description">
                         <h3>Starting Point</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>I was interested in the idea of the accordion menu after seeing it in use online. The click-and-show action felt like an elegant and simple way to display all my projects on a single page. As I began designing, I realized that the interaction reminded me of leafing through a big filing cabinet full of folders. Building on this idea, I tried to loosely represent this experience with text, color and organization in order to make the experience as tactile and engaging as possible.</p>
                     </div>
                      <img src="images/twd-landing-page/folders.png" alt="a series of multicoloured file folders overlapping diagonally">
                 </section>
@@ -48,7 +47,7 @@
                 <section class="color-palette container">
                     <div class="description">
                         <h3>Colour Palette</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>A specific palette was used to reference the colour coded file folders and printer paper found in many offices. I worked with a range of pastel colour that I felt complimented each other nicely when laid out together. The folders are coloured to emphasize hierarchy; solid colours as parents, and tinted variations as children</p>
                     </div>
                     <div class="swatches">
                         <div class="swatch swatch-01">
@@ -104,12 +103,12 @@
                     <!-- end swatches -->
                 </section>
                 <!-- end color-palette container -->
-                <section class="accordian container">
+                <section class="accordion container">
                     <div class="description">
-                        <h3>Accordian Menu</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <h3>Accordion Menu</h3>
+                        <p>The accordion menu was created using jquery to toggle the open and close states of the menu. Opening each parent reveals the projects with in. When a project is clicked, the folder opens to reveal a slide-show of screen grabs showcasing the projects, with a button to view the live site through.</p>
                     </div>
-                    <div class="gallery"> </div>
+                    <img src="images/twd-landing-page/landing-page-full-page.png" alt="a screen capture of Tevis Bateman's TWD website with the accordion interface open">
                 </section>
                 <!-- end accordian container -->
             </div>

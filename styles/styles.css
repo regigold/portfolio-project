@@ -304,12 +304,22 @@ footer p {
   position: absolute;
   bottom: 0; }
 
+.footer-nav {
+  display: none; }
+
 @media only screen and (min-width: 640px) {
   footer {
     margin-bottom: 0; }
 
-  footer ul {
-    float: right; }
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between; }
+
+  .footer-nav {
+    display: block; }
+
+  .footer-nav a {
+    font-size: 1.1em; }
 
   footer a {
     transition: color .3s ease-in-out; }
@@ -391,7 +401,7 @@ h3 {
 ======================================= */
 /* --- GENERAL PROJECT PAGE STYLES --- */
 .project-page header {
-  height: 60vh; }
+  height: 58vh; }
 .project-page .header-img {
   display: block;
   min-width: 1145px;
@@ -525,6 +535,22 @@ h3 {
   background-color: #C09945; }
 #new-york-post-redesign .swatch-03 {
   background-color: #231F20; }
+#new-york-post-redesign .responsive .gallery div:first-of-type {
+  max-width: 100%;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35); }
+#new-york-post-redesign .responsive .gallery div:first-of-type img {
+  display: block;
+  max-width: 100%; }
+#new-york-post-redesign .menu p a {
+  color: #E1b451;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #231F20;
+  transition: border-bottom .2s ease-in-out; }
+  #new-york-post-redesign .menu p a:hover, #new-york-post-redesign .menu p a:focus {
+    border-bottom: 1px solid #E1b451; }
 #new-york-post-redesign footer a:hover,
 #new-york-post-redesign footer a:focus {
   color: #E1b451; }
@@ -597,6 +623,10 @@ h3 {
   background-color: #FF6347; }
 #twd-landing-page .swatch-07 {
   background-color: #4682B4; }
+#twd-landing-page .accordion img {
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35); }
 #twd-landing-page footer a:hover,
 #twd-landing-page footer a:focus {
   color: #F5AE70; }
@@ -724,25 +754,66 @@ h3 {
 #about header {
   height: auto;
   background-color: transparent; }
-#about nav svg path {
+#about .main-nav svg path {
   fill: #231F20; }
-#about nav svg:hover path {
+#about .main-nav svg:hover path {
   fill: #00A99D; }
-#about nav li a {
+#about .main-nav li a {
   color: #231F20; }
-#about .intro p {
-  padding-right: 0;
-  margin-bottom: 100px;
-  max-width: 700px; }
-#about .intro h3 {
-  font-size: 2.125em;
-  color: #231F20;
-  margin-bottom: 30px; }
+#about .container {
+  max-width: 700px;
+  margin: 0 auto; }
 #about .intro {
   flex-direction: column;
   justify-content: center;
-  margin-top: 175px;
-  margin-bottom: 175px; }
+  margin-top: 80px;
+  margin-bottom: 60px; }
+#about .intro p {
+  font-size: 1.125em;
+  line-height: 32px;
+  margin-bottom: 40px; }
+#about .intro h1 {
+  font-size: 2.125em;
+  color: #231F20;
+  margin-bottom: 40px;
+  font-family: "montserratsemibold";
+  line-height: 30px;
+  letter-spacing: .125em; }
+#about .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px; }
+#about .find-me,
+#about .contact-me {
+  width: 50%;
+  text-align: center; }
+  #about .find-me h2,
+  #about .contact-me h2 {
+    font-family: "montserratsemibold";
+    font-size: 1.25em;
+    letter-spacing: .125em;
+    color: #231F20;
+    margin-bottom: 20px; }
+  #about .find-me li,
+  #about .contact-me li {
+    margin-bottom: 14px; }
+  #about .find-me a,
+  #about .contact-me a {
+    font-family: "hk_groteskregular";
+    font-size: 1.05em;
+    letter-spacing: .125em;
+    color: #00A99D;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #231F20;
+    transition: border-color .2s ease-in-out; }
+    #about .find-me a:hover, #about .find-me a:focus, #about .find-me a:active,
+    #about .contact-me a:hover,
+    #about .contact-me a:focus,
+    #about .contact-me a:active {
+      border-bottom: 2px solid #00A99D; }
 
 /* CONTACT PAGE 
 ======================================= */

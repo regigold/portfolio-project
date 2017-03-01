@@ -11,7 +11,7 @@ $(document).ready(function() {
     $stepMenu.animate({
       width: 'toggle'
     }, 'slow')
-    $('.fa-chevron-right').toggleClass('fa-rotate-180', 'slow');
+    $('.fa-chevron-left').toggleClass('fa-flip-horizontal', 'slow');
   });
 
 });

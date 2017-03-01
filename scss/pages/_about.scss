@@ -10,37 +10,88 @@
         background-color: transparent;
     }
     
-    nav svg path {
+    .main-nav svg path {
         fill: $black;
     }
     
-    nav svg:hover path {
+    .main-nav svg:hover path {
         fill: $highlight;
     }
     
-    nav li a {
+    .main-nav li a {
         color: $black;
     }
     
+    // containers //
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
     // introduction //
     
-    .intro p {
-        padding-right: 0;
-        margin-bottom: 100px;
-        max-width: 700px;
-    }
-    
-    .intro h3 {
-        font-size: 2.125em;
-        color: $black;
-        margin-bottom: 30px;
-    }
-
     .intro {
         flex-direction: column;
         justify-content: center;
-        margin-top: 175px;
-        margin-bottom: 175px;
+        margin-top: 80px;
+        margin-bottom: 60px;
     }
     
+    .intro p {
+        font-size: 1.125em; // 20px = 1.25em
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .intro h1 {
+        font-size: 2.125em;
+        color: $black;
+        margin-bottom: 40px;
+        font-family: $mont-semi-bold;
+        line-height: 30px;
+        letter-spacing: .125em;
+    }
+    // contact //
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    
+    .find-me,
+    .contact-me {
+        width: 50%;
+        text-align: center;
+        
+        h2 {
+            font-family: $mont-semi-bold; 
+            font-size: 1.25em;
+            letter-spacing: .125em;
+            color: $black;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 14px;
+        }
+        
+        a {
+            font-family: $hk-grotesk; 
+            font-size: 1.05em;
+            letter-spacing: .125em;
+            color: $highlight;
+            padding-bottom: 3px;
+            border-bottom: 2px solid $black;
+            transition: border-color .2s ease-in-out;
+            
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: 2px solid $highlight;
+            }
+        }
+        
+    }
 }    

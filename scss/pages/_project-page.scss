@@ -7,7 +7,7 @@
 .project-page {
     // header //
     header {
-        height: 60vh;
+        height: 58vh;
     }
     .header-img {
         display: block;
@@ -201,6 +201,30 @@
     .swatch-03 {
         background-color: #231F20;
     }
+    // responsive container //
+    .responsive .gallery div:first-of-type {
+        max-width: 100%;
+        margin: 30px 0;
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    .responsive .gallery div:first-of-type img {
+        display: block;
+        max-width: 100%;
+    }
+    //menu bar container //
+    .menu p a {
+        color: $responsive;
+        padding-bottom: 2px;
+        border-bottom: 1px solid $black; 
+        transition: border-bottom .2s ease-in-out;
+        
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid $responsive;  
+        }
+    }
     // footer //
     footer a:hover,
     footer a:focus {
@@ -315,6 +339,12 @@
     }
     .swatch-07 {
         background-color: #4682B4;
+    }
+    // accordion container //
+    .accordion img {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
     }
     // footer //
     footer a:hover,

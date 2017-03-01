@@ -7,7 +7,7 @@
    <ul class="nav-bar">
        <li><a href="index.php">Work</a></li>
        <li><a href="about.php">About</a></li>
-       <li><a href="contact.php">Contact</a></li>
+<!--       <li><a href="contact.php">Contact</a></li>-->
    </ul>
 
 </nav>

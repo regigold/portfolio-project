@@ -88,7 +88,7 @@
                     <div class="code-demo">
                         <nav class="site-nav-bar">
                             <ul>
-                                <li class="slide-out"><a class="slide-btn" href="#scroll-step-01">button 01 <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 16px; padding-left: 5px;"></i></a>
+                                <li class="slide-out"><a class="slide-btn" href="#scroll-step-01">Click Me! <i class="fa fa-chevron-left" aria-hidden="true" style="font-size: 16px; padding-left: 5px;"></i></a>
                                     <ul class="step-menu">
                                         <li><a class="scroll-step-01" href="#scroll-step-01">Step 01</a></li>
                                         <li><a class="scroll-step-02" href="#scroll-step-02">Step 02</a></li>

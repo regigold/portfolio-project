@@ -276,12 +276,23 @@ footer p {
     bottom: 0;
 }
 
+.footer-nav {
+    display: none;
+}
+
 @media only screen and (min-width: 640px) {
     footer {
         margin-bottom: 0;
     }
-    footer ul {
-        float: right;
+    footer .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: block;
+    }
+    .footer-nav a {
+        font-size: 1.1em;
     }
     footer a {
         transition: color .3s ease-in-out;

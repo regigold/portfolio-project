@@ -14,7 +14,7 @@
         <main>
             <div class="wrapper">
                 <section class="intro container">
-                    <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                    <p>As an exercise in responsive design I redesigned the landing page for the New York Post. The purpose of this project was to create a fully responsive webpage that was readable across all devices. We were advised to work with complex content in order to explore the in-and-outs of responsive design. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. Consequently, I was also intrigued by the idea of making a web-page with the feel of a newspaper. </p>
                     <div class="project-tools-skills">
                         <div class="tools">
                             <h3>Tools</h3>
@@ -23,6 +23,7 @@
                                 <li>HTML/CSS</li>
                                 <li>jQuery</li>
                                 <li>SASS</li>
+                                <li>Git</li>
                             </ul>
                         </div>
                         <div class="skills">
@@ -41,19 +42,19 @@
                 <section class="inspiration container">
                     <div class="description">
                         <h3>Starting Point</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>The inspiration for this project started in print. Knowing the main constraint was to create a fully responsive layout, I felt that finding a way to work with multiple columns would offer a useful challenge. ‘Multiple columns’ instantly conjured images of congested newspapers of old, as you can see in the image of the The New York Times below. After researching ‘old newspapers’ I quickly found that the New York Post is one of the oldest daily newspapers in North America, beginning circulation in 1801. Seeing the current state of the tabloid-esque newspaper, I felt it would be fun to rebrand their homepage to re-capture a bit of their heritage.</p>
                     </div> <img src="images/new-york-post/responsive-layout.jpg" alt="The front page of the New York Times, June 6th, 1944"> </section>
                 <!-- end inspiration container -->
                 <section class="typography container">
                     <div class="description">
                         <h3>Typography</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>Typographically, I began the project by closely examining the fonts classically used by the New York Times. I choose the strong, no-nonsense serif font, Heuristica, for the featured article title and body copy, paired with a condensed version of Franklin Gothic for the article headers. In combination, Franklin Gothic and Heuristica seemed to capture the classic 1940s feel I looking for. Roboto Light was used on all buttons and article subtext, and helped to provide some visual variety. Due to the text heavy design,finding and combining visually interesting fonts was a major part of the design process.</p>
                     </div> <img src="images/new-york-post/responsive-typography.svg" alt="a list of typefaces used in the New York Post Redisgn. Fonts include: Heuristica, Franklin Gothic and Roboto"> </section>
                 <!-- end typography container -->
                 <section class="color-palette container">
                     <div class="description">
                         <h3>Colour Palette</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>Hoping to capture the feeling of an aged newspaper, I choose a warm yellow to act as the background colour for the site. The use of yellow also worked well as a colour variation on the New York Post’s current branding.</p>
                     </div>
                     <div class="swatches">
                         <div class="swatch swatch-01">
@@ -83,9 +84,10 @@
                 <section class="responsive container">
                     <div class="description">
                         <h3>Responsive Web Design</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>As my first experience coding a responsive layout, I worked desktop down. This presented a series of challenges which revolved around compressing an already complex desktop layout into a single column layout for smaller devices. As I adjusted my screen size smaller, and smaller I identified all the points where the layout broke. I added a number of media queries to fix the braking areas of the site until the layout worked on every devices from an iphone 5 to a large desktop monitor.</p>
                     </div>
                     <div class="gallery">
+                       <div><img src="images/new-york-post/new-york-post-desktop-02.png" alt="desktop sreen capture of the redesigned New York Post landing page"></div>
                         <div><img src="images/new-york-post/new-york-post-mobile-01.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
                         <div><img src="images/new-york-post/new-york-post-mobile-02.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
                         <div><img src="images/new-york-post/new-york-post-mobile-03.png" alt="mobile sreen capture of the redesigned New York Post landing page"></div>
@@ -95,7 +97,7 @@
                 <section class="menu container">
                     <div class="description">
                         <h3>Bottom Oriented Menu Bar</h3>
-                        <p>As an exercise in responsive design I redesigned the landing page for the New York Post. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series of columns. My goal for this project was to create a fully responsive, multi-column layout that was readable across all devices.</p>
+                        <p>While working on this project, one of our instructors presented an intriguing UI / UX lecture on the benefits of bottom oriented navigations. We were told that <a href="http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php">49% of people use their phones with one-hand</a>, meaning that nearly half of all users have to stretch their thumbs to the top of their screen to navigate through many sites with traditional navigations.. Keeping this in mind, I decided to design a bottom oriented navigation to ease the pain of the thumbs using my site. The navigation consists of a search bar and menu. Due to the length of the menu, I placed the buttons on a slider to be swiped through.</p>
                     </div>
                     <div class="gallery">
                         <div><img src="images/new-york-post/responsive-mobile-menu-01.png" alt="mobile sreen capture showing the bottom oriented navigation with the menu closed"></div>
