@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include_once 'include/head.php'; // include head ?>
 
-    <body id="about">
+    <body id="work">
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
