@@ -3,6 +3,9 @@
 <?php include_once 'include/head.php'; // include head ?>
 
     <body id="new-york-post-redesign" class="project-page">
+       
+       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+       
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
@@ -11,7 +14,7 @@
                         <h2>Responsive Web Design</h2> </div> <img class="header-img" src="images/new-york-post/new-york-post-header.png" alt="mobile and desktop screen shots of the redesigned New York Post website"> </div>
         </header>
         <!-- end header -->
-        <main>
+        <main id="content">
             <div class="wrapper">
                 <section class="intro container">
                     <p>As an exercise in responsive design I redesigned the landing page for the New York Post. The purpose of this project was to create a fully responsive webpage that was readable across all devices. We were advised to work with complex content in order to explore the in-and-outs of responsive design. My inspiration came from newspaper layouts of the 1940’s, where content was crammed into an unending series  of columns. Consequently, I was also intrigued by the idea of making a web-page with the feel of a newspaper. </p>
@@ -36,7 +39,7 @@
                         </div>
                     </div>
                     <div id="sticky-anchor"></div>
-                        <a href="#" id="sticky" class="out-link" >Visit Live Site</a>
+                        <a href="new-york-post/index.html" id="sticky" class="out-link" target="_blank">Visit Live Site</a>
                 </section>
                 <!-- end project-intro container -->
                 <section class="inspiration container">
@@ -106,6 +109,12 @@
                     </div>
                 </section>
                 <!-- end menu container -->
+                
+                <nav class=project-nav>
+<!--                    <a class="previous">Previous</a> -->
+                    <a class="next" href="twd-landing-page.php?key=1">Next</a>
+                </nav>
+                
             </div>
         </main>
         <!-- end main -->

@@ -73,6 +73,48 @@ button {
   color: inherit;
   font: inherit; }
 
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: white;
+  /*	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);*/
+  clip: auto !important;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 1px;
+  left: 1px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */ }
+
+.skip-link {
+  font-family: 'hk_groteskregular';
+  color: #231F20;
+  background-color: white;
+  border: 1px solid #231F20;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6); }
+
+/* Focus outline style */
+*:focus {
+  outline: none; }
+
 /* --- FONTS --- */
 @font-face {
   font-family: 'hk_groteskregular';
@@ -273,6 +315,20 @@ header {
 
   .container .description p {
     margin-bottom: 100px; } }
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px; }
+  .project-nav a {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 0.17em solid #231F20;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-family: "montserratsemibold";
+    color: #231F20; }
+
 /* ---------------------------------------
    FOOTER STYLES 
 --------------------------------------- */
@@ -295,7 +351,7 @@ footer a {
   display: block;
   color: white;
   font-size: 26px;
-  padding: 8px; }
+  padding: 8px 0; }
 
 footer p {
   font-family: "montserratextralight";
@@ -306,6 +362,11 @@ footer p {
 
 .footer-nav {
   display: none; }
+  .footer-nav a {
+    margin-right: 8px; }
+
+.social-media a {
+  margin-left: 8px; }
 
 @media only screen and (min-width: 640px) {
   footer {
@@ -340,7 +401,8 @@ footer p {
   background-color: transparent; }
 #work .main-nav svg path {
   fill: #231F20; }
-#work .main-nav svg:hover path {
+#work .main-nav a:hover svg path,
+#work .main-nav a:focus svg path {
   fill: #00A99D; }
 #work .main-nav li a {
   color: #231F20; }
@@ -548,6 +610,11 @@ footer p {
   transition: border-bottom .2s ease-in-out; }
   #new-york-post-redesign .menu p a:hover, #new-york-post-redesign .menu p a:focus {
     border-bottom: 1px solid #E1b451; }
+#new-york-post-redesign .project-nav .next {
+  margin-left: auto; }
+  #new-york-post-redesign .project-nav .next:hover, #new-york-post-redesign .project-nav .next:focus, #new-york-post-redesign .project-nav .next:active {
+    color: #F5AE70;
+    border-bottom: 0.17em solid #F5AE70; }
 #new-york-post-redesign footer a:hover,
 #new-york-post-redesign footer a:focus {
   color: #E1b451; }
@@ -624,6 +691,12 @@ footer p {
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35); }
+#twd-landing-page .project-nav .previous:hover, #twd-landing-page .project-nav .previous:focus, #twd-landing-page .project-nav .previous:active {
+  color: #E1b451;
+  border-bottom: 0.17em solid #E1b451; }
+#twd-landing-page .project-nav .next:hover, #twd-landing-page .project-nav .next:focus, #twd-landing-page .project-nav .next:active {
+  color: #619EA1;
+  border-bottom: 0.17em solid #619EA1; }
 #twd-landing-page footer a:hover,
 #twd-landing-page footer a:focus {
   color: #F5AE70; }
@@ -740,6 +813,14 @@ footer p {
     border-bottom: 0.19em solid #619EA1; }
   #javascript-jquery-page .menu .out-link:active, #javascript-jquery-page .menu .out-link:focus {
     border-bottom: 0.19em solid #619EA1; }
+#javascript-jquery-page .project-nav .previous {
+  margin-right: auto; }
+  #javascript-jquery-page .project-nav .previous:hover, #javascript-jquery-page .project-nav .previous:focus, #javascript-jquery-page .project-nav .previous:active {
+    color: #F5AE70;
+    border-bottom: 0.17em solid #F5AE70; }
+#javascript-jquery-page .project-nav .next:hover, #javascript-jquery-page .project-nav .next:focus, #javascript-jquery-page .project-nav .next:active {
+  color: #619EA1;
+  border-bottom: 0.17em solid #619EA1; }
 #javascript-jquery-page footer a:hover,
 #javascript-jquery-page footer a:focus {
   color: #619EA1; }

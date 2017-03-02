@@ -3,6 +3,9 @@
 <?php include_once 'include/head.php'; // include head ?>
 
     <body id="twd-landing-page" class="project-page">
+       
+       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+       
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
@@ -11,7 +14,7 @@
                         <h2>Introduction to jQuery</h2> </div> <img class="header-img" src="images/twd-landing-page/landing-page-header.png" alt="desktop screen shots of the Tevis Bateman's TWD landing page"> </div>
         </header>
         <!-- end header -->
-        <main>
+        <main id="content">
             <div class="wrapper">
                 <section class="intro container">
                     <p>The TWD landing page was designed to house all projects completed during the Technical Web Design program at BCIT. The page was designed as completed framework that could be updated to show case projects as we progressed through the program. Inspired by accordion menus and file folders, I decided to base my design on a simple hide-and-show interaction. Creating the functionality was my first experience using jQuery.</p>
@@ -33,7 +36,7 @@
                         </div>
                     </div>
                     <div id="sticky-anchor"></div>
-                        <a href="#" id="sticky" class="out-link" >Visit Live Site</a>
+                        <a href="http://tbateman.htpwebdesign.ca/" id="sticky" class="out-link" target="_blank" >Visit Live Site</a>
                 </section>
                 <!-- end project-intro container -->
                 <section class="inspiration container">
@@ -111,6 +114,12 @@
                     <img src="images/twd-landing-page/landing-page-full-page.png" alt="a screen capture of Tevis Bateman's TWD website with the accordion interface open">
                 </section>
                 <!-- end accordian container -->
+                
+                <nav class=project-nav>
+                    <a class="previous" href="new-york-post-redesign.php?key=0">Previous</a>
+                    <a class="next" href="javascript-jquery.php?key=2">Next</a>
+                </nav>
+                
             </div>
         </main>
         <!-- end main -->

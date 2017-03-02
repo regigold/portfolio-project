@@ -3,12 +3,15 @@
 <?php include_once 'include/head.php'; // include head ?>
 
     <body id="about">
+       
+       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+       
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
         </header>
         <!-- end header -->
-        <main>
+        <main id="content">
             <div class="wrapper">
                 <section class="intro container">
                     <h1>Hi, I'm Tevis</h1>

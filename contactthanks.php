@@ -3,6 +3,9 @@
 <?php include_once 'include/head.php'; // include head ?>
 
     <body id="contact" class="thanks">
+       
+       <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+       
         <header>
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>

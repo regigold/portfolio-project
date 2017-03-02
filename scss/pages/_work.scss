@@ -14,7 +14,8 @@
         fill: $black;
     }
     
-    .main-nav svg:hover path {
+    .main-nav a:hover svg path,
+    .main-nav a:focus svg path {
         fill: $highlight;
     }
     
