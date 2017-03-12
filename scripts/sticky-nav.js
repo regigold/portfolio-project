@@ -12,7 +12,7 @@ $( document ).ready(function() {
             $('#sticky-anchor').height($('#sticky').outerHeight());
         } else {
             $('#sticky').removeClass('stick');
-            $('#sticky-anchor').height(0);
+//            $('#sticky-anchor').height(0);
         }
     }
 

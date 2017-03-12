@@ -38,8 +38,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div id="sticky-anchor"></div>
+                    <div id="sticky-anchor">
                         <a href="javascript-tutorial/index.html" id="sticky" class="out-link" target="_blank">Visit Live Site</a>
+                    </div>    
                 </section>
                 <!-- end project-intro container -->
                 <section class="color-palette container">

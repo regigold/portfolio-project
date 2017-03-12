@@ -204,7 +204,10 @@ header {
   bottom: 0;
   left: 0;
   background-color: white;
-  transition: bottom .2s ease-in-out; }
+  transition: bottom .2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
 
 .main-nav li {
   height: 50px;
@@ -334,9 +337,8 @@ header {
 --------------------------------------- */
 footer {
   display: block;
-  height: 200px;
-  margin-bottom: 50px;
-  padding: 20px 0;
+  height: 300px;
+  padding: 20px 0 80px 0;
   position: relative;
   background-color: #231F20; }
 
@@ -370,7 +372,9 @@ footer p {
 
 @media only screen and (min-width: 640px) {
   footer {
-    margin-bottom: 0; }
+    display: block;
+    height: 200px;
+    padding: 20px 0; }
 
   footer .wrapper {
     display: flex;
@@ -529,7 +533,10 @@ footer p {
   z-index: 10000;
   font-size: .8em;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
 @media only screen and (min-width: 900px) {
   .project-page .intro {
     flex-direction: row;
@@ -545,7 +552,9 @@ footer p {
     width: 30%;
     margin: 0; }
   .project-page #sticky-anchor {
-    width: 100%; } }
+    display: block;
+    width: 100%;
+    height: 46px; } }
 .project-page .typography img {
   display: block;
   margin: 0 auto;

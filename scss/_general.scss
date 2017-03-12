@@ -95,6 +95,9 @@ header {
     left: 0;
     background-color: white;
     transition: bottom .2s ease-in-out;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav li {
@@ -255,14 +258,6 @@ header {
         font-family: $mont-semi-bold;
         color: $black;
     }
-    
-//    .previous {
-//        margin-right: auto;
-//    }
-//    
-//    .next {
-//        margin-left: auto;
-//    }
 }
 
 
@@ -272,9 +267,8 @@ header {
 
 footer {
     display: block;
-    height: 200px;
-    margin-bottom: 50px;
-    padding: 20px 0;
+    height: 300px;
+    padding: 20px 0 80px 0;
     position: relative;
     background-color: $black;
 }
@@ -317,7 +311,9 @@ footer p {
 
 @media only screen and (min-width: 640px) {
     footer {
-        margin-bottom: 0;
+        display: block;
+        height: 200px;
+        padding: 20px 0;
     }
     footer .wrapper {
         display: flex;
@@ -347,10 +343,10 @@ footer p {
 --------------------------------------- */
 
 // work page //
-@import "pages/_work";
+@import "pages/work";
 // project pages //
-@import "pages/_project-page";
+@import "pages/project-page";
 // about page //
-@import "pages/_about";
+@import "pages/about";
 // contact //
-@import "pages/_contact";
+@import "pages/contact";
