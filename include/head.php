@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- font-awesome -->
-    <link rel="stylesheet" text="text/css" href="styles/styles.css">
+    <link rel="stylesheet" text="text/css" href="styles/styles.min.css">
     
     <!-- style page -->
     <!--[if lt IE 9]>

@@ -118,9 +118,9 @@
         <?php include_once 'include/footer.php'; // include footer ?>
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-            <script src="scripts/sticky-nav.js" type="text/javascript"></script>
-            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
-            <script src="scripts/javascript-jquery-code-demo.js" type="text/javascript"></script>
+            <script src="scripts/sticky-nav.min.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.min.js" type="text/javascript"></script>
+            <script src="scripts/javascript-jquery-code-demo.min.js" type="text/javascript"></script>
     </body>
 
 </html>
