@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once 'include/head.php'; // include head ?>
+<head>
+    <title>Work | Javascript &amp; jQuery Tutorials </title>
+    <?php include_once 'include/head.php'; // include head ?>
+</head>
 
     <body id="javascript-jquery-page" class="project-page">
        
@@ -10,8 +13,8 @@
             <div class="wrapper">
                 <?php include_once 'include/nav.php'; // include nav ?>
                     <div class="title-text">
-                        <h1>JavaScript & jQuery Tutorial Site</h1>
-                        <h2>Three Helpful Javascript & jQuery Tutorials</h2> </div>
+                        <h1>JavaScript &amp; jQuery Tutorial Site</h1>
+                        <h2>Three Helpful Javascript &amp; jQuery Tutorials</h2> </div>
             </div>
         </header>
         <!-- end header -->
@@ -103,13 +106,13 @@
                             </ul>
                         </nav>
                     </div>
-                    <a class="out-link" href="http://codepen.io/tevis-bateman/pen/evNpqE">View Code Pen</a>
+                    <a class="out-link" target="_blank" href="http://codepen.io/tevis-bateman/pen/evNpqE">View Code Pen</a>
                 </section>
                 <!-- end responsive container -->
                 
                 <nav class=project-nav>
-                    <a class="previous" href="twd-landing-page.php?key=1">Previous</a>
-<!--                    <a class="next">Next</a>-->
+                    <a class="previous" href="twd-landing-page.php">Previous</a>
+                    <a class="next" href="elections-canada.php">Next</a>
                 </nav>
                 
             </div>
@@ -118,9 +121,9 @@
         <?php include_once 'include/footer.php'; // include footer ?>
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-            <script src="scripts/sticky-nav.js" type="text/javascript"></script>
-            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
-            <script src="scripts/javascript-jquery-code-demo.js" type="text/javascript"></script>
+            <script src="scripts/sticky-nav.min.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.min.js" type="text/javascript"></script>
+            <script src="scripts/javascript-jquery-code-demo.min.js" type="text/javascript"></script>
     </body>
 
 </html>

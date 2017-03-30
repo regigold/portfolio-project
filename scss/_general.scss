@@ -4,6 +4,8 @@ $highlight: #00A99D;
 $responsive: #E1b451;
 $landing-page: #F5AE70;
 $js-page: #619EA1;
+$jonbenjamin: #7e8081;
+$elections-canada: #b3b3b3;
 
 // fonts //
 $mont-extra-bold: 'montserratextrabold';
@@ -96,8 +98,8 @@ header {
     background-color: white;
     transition: bottom .2s ease-in-out;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav li {
@@ -128,6 +130,9 @@ header {
         position: static;
         background-color: transparent;
         z-index: 100;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
     .main-nav li {
         height: auto;
@@ -135,8 +140,8 @@ header {
         margin-left: 30px;
     }
     .main-nav li a {
-        padding: 0 0 6px 0;
-        line-height: normal;
+        padding: 0 0 10px 0;
+        line-height: 1;
         font-size: 1.1em;
         border-bottom: .19em solid transparent;
         transition: border-color .3s;
@@ -212,7 +217,11 @@ header {
 }
 
 .container .description p {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+}
+
+.container .description p:last-of-type {
+    margin-bottom: 60px;
 }
 
 .container .gallery {
@@ -257,6 +266,10 @@ header {
         letter-spacing: .1em;
         font-family: $mont-semi-bold;
         color: $black;
+    }
+    
+    .no-project {
+        display: none;
     }
 }
 

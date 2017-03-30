@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once 'include/head.php'; // include head ?>
+<head>
+    <title>About</title>
+    <?php include_once 'include/head.php'; // include head ?>
+</head>
 
     <body id="about">
        
@@ -30,7 +33,7 @@
                     </div>
                     <div class="contact-me">
                        <h2>Give me a shout</h2>
-                        <a target="_blank" href="mailto:tbateman88@gmail.com">tbateman88@gmail.com</a>
+                        <a target="_blank" href="mailto:tbateman88@gmail.com">hello@tevisbateman.com</a>
                     </div>
                 </section>
                 <!-- end container container -->
@@ -40,7 +43,7 @@
         <?php include_once 'include/footer.php'; // include footer ?>
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.min.js" type="text/javascript"></script>
     </body>
 
 </html>

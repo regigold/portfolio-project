@@ -84,7 +84,7 @@
         text-transform: uppercase;
         font-size: 1.125em;
         letter-spacing: .125em;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
     }
     #sticky.stick {
         margin-top: 0 !important;
@@ -117,7 +117,7 @@
             margin: 0;
         }
         #sticky-anchor {
-            display: block;
+            display: flex;
             width: 100%;
             height: 46px;        }
     }
@@ -127,10 +127,185 @@
         margin: 0 auto;
         max-width: 500px;
     }
-    // container gallery  //
-    .container .gallery img {
+}
+
+/* --- JON BENJAMIN PAGE --- */
+
+#jonbenjamin {
+    
+    // header //
+    header {
+        background-color: $jonbenjamin;
+    }
+    // navigation //
+    .main-nav svg:hover path {
+        fill: $black;
+    }
+    .main-nav ul {
+        background-color: $jonbenjamin;
+    }
+    .main-nav li a {
+        color: white;
+        &:hover,
+        &:focus {
+            background-color: tint( $jonbenjamin, 12%);
+        }
+        &:active {
+            background-color: shade( $jonbenjamin, 12%);
+        }
+    }
+    @media only screen and (min-width: 640px) {
+        .main-nav ul {
+            background-color: transparent;
+        }
+        .main-nav li a {
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                color: white;
+                background-color: transparent;
+                border-bottom: .19em solid $black;
+            }
+        }
+    }
+    // content //
+    h3 {
+        color: $jonbenjamin;
+    }
+    // introduction container //
+    .intro .out-link {
+        color: white;
+        background-color: $jonbenjamin;
+        &:hover {
+            background-color: tint( $jonbenjamin, 12%);
+        }
+        &:active,
+        &:focus {
+            background-color: shade( $jonbenjamin, 12%);
+        }
+    }
+    // starting point //
+    .inspiration .gallery div:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    .inspiration img {
+        display: block;
+        max-width: 100%;
+    }
+    @media only screen and (min-width: 750px) {
+        .inspiration .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+        .inspiration .gallery div {
+            flex-basis: 325px;
+            flex-grow: 1;
+        }
+        .inspiration .gallery div:not(:last-of-type) {
+            margin-bottom: 0;
+        }
+        .inspiration .gallery div:nth-of-type(odd) {
+            margin-right: 20px;
+        }
+        .inspiration .gallery div:nth-of-type(1),
+        .inspiration .gallery div:nth-of-type(2) {
+            margin-bottom: 20px;
+        }
+    }
+    @media only screen and (min-width: 1080px) {
+        .inspiration .gallery div {
+            flex-basis: 450px;
+        }
+    }
+    // content strategy //
+    @media only screen and (min-width: 960px) {
+        .content-strategy .gallery div {
+            max-width: 90%;
+        }    
+    }
+    // layout //
+    .layout .gallery div:first-of-type {
+        margin-bottom: 20px;
+    }
+    @media only screen and (min-width: 800px) {
+        .layout .gallery div {
+            flex-basis: 350px;
+            flex-grow: 1;
+        }
+        .layout .gallery div:first-of-type {
+            margin-right: 20px;
+        }
+    }
+    // wordpress //
+    .wordpress .gallery div:first-of-type {
+        max-width: 77%;
+        margin: 30px 0;
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    .wordpress .gallery div img {
+        display: block;
+    }
+    .wordpress .gallery div:not(:first-of-type) img {
         max-width: 300px;
     }
+    // site testing //
+    .site-testing .gallery div {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    .site-testing .gallery img {
+        display: block;
+        max-width: 100%;
+    }
+    .site-testing .out-link {
+        margin-top: 50px;
+        padding: 0 0 7px 0;
+        border-bottom: .19em solid $black;
+        color: $jonbenjamin;
+        transition: border-color .3s ease-in-out;
+        &:hover {
+            border-bottom: .19em solid $elections-canada;
+        }
+        &:active,
+        &:focus {
+            border-bottom: .19em solid $elections-canada;
+        }
+    }
+    // project nav //
+    .project-nav {
+    
+        .previous {
+            &:hover,
+            &:focus,
+            &:active {
+                color: $jonbenjamin;
+                border-bottom: .17em solid $jonbenjamin;
+            }
+        }
+        .next {
+            margin-left: auto;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $jonbenjamin;
+                border-bottom: .17em solid $jonbenjamin;
+            }
+        }
+    }
+    // footer //
+    footer a:hover,
+    footer a:focus {
+        color: $jonbenjamin;
+    }
+    footer a:active {
+        color: shade( $jonbenjamin, 20%);
+    } 
 }
 
 
@@ -209,13 +384,16 @@
     .responsive .gallery div:first-of-type {
         max-width: 100%;
         margin: 30px 0;
+        transform: scale(.9675);
         -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
         -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
     }
-    .responsive .gallery div:first-of-type img {
+    .responsive .gallery div img {
         display: block;
-        max-width: 100%;
+    }
+    .responsive .gallery div:not(:first-of-type) img {
+        max-width: 300px;
     }
     //menu bar container //
     .menu p a {
@@ -232,14 +410,20 @@
     // project navigation //
 
     .project-nav {
-    
-        .next {
-            margin-left: auto;
+        .previous {
             &:hover,
             &:focus,
             &:active {
-                color: $landing-page;
-                border-bottom: .17em solid $landing-page;
+                color: $responsive;
+                border-bottom: .17em solid $responsive;
+            }
+        }
+        .next {
+            &:hover,
+            &:focus,
+            &:active {
+                color: $responsive;
+                border-bottom: .17em solid $responsive;
             }
         }
     }
@@ -315,21 +499,6 @@
         align-items: center;
         width: 100%;
     }
-    .equal-sign {
-        display: block;
-        width: 60px;
-        height: 12px;
-        background-color: $black;
-        margin-bottom: 30px;
-    }
-    .equal-sign::before {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 12px;
-        margin-top: 30px;
-        background-color: $black;
-    }
     // color palette //
     .swatch-01 {
         background-color: #F5AE70;
@@ -371,16 +540,16 @@
             &:hover,
             &:focus,
             &:active {
-                color: $responsive;
-                border-bottom: .17em solid $responsive;
+                color: $landing-page;
+                border-bottom: .17em solid $landing-page;
             }
         }
         .next {
             &:hover,
             &:focus,
             &:active {
-                color: $js-page;
-                border-bottom: .17em solid $js-page;
+                color: $landing-page;
+                border-bottom: .17em solid $landing-page;
             }
         }
     }
@@ -564,8 +733,8 @@
             &:hover,
             &:focus,
             &:active {
-                color: $landing-page;
-                border-bottom: .17em solid $landing-page;
+                color: $js-page;
+                border-bottom: .17em solid $js-page;
             }
         }
         .next {
@@ -585,4 +754,148 @@
     footer a:active {
         color: shade( $js-page, 20%);
     }
+}
+
+/* --- JON BENJAMIN PAGE --- */
+
+#elections-canada {
+    
+    // header //
+    header {
+        background-color: $elections-canada;
+    }
+    .header-img {
+        opacity: .4;
+    }
+    // navigation //
+    .main-nav svg:hover path {
+        fill: $black;
+    }
+    .main-nav ul {
+        background-color: $elections-canada;
+    }
+    .main-nav li a {
+        color: white;
+        &:hover,
+        &:focus {
+            background-color: tint( $elections-canada, 12%);
+        }
+        &:active {
+            background-color: shade( $elections-canada, 12%);
+        }
+    }
+    @media only screen and (min-width: 640px) {
+        .main-nav ul {
+            background-color: transparent;
+        }
+        .main-nav li a {
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                color: white;
+                background-color: transparent;
+                border-bottom: .19em solid $black;
+            }
+        }
+    }
+    // content //
+    h3 {
+        color: $elections-canada;
+    }
+    // introduction container //
+    .intro .out-link {
+        color: white;
+        background-color: $elections-canada;
+        &:hover {
+            background-color: tint( $elections-canada, 12%);
+        }
+        &:active,
+        &:focus {
+            background-color: shade( $elections-canada, 12%);
+        }
+    }
+    // content-strategy //
+    .content-strategy img {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    // logo design //
+    .logo .gallery div:first-of-type {
+        margin-bottom: 100px;
+    }
+    @media only screen and (min-width: 600px) {
+        .logo .gallery div {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+    // style guide //
+    .style-guide img {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    @media only screen and (min-width: 960px) {
+        .style-guide img {
+            max-width: 750px;
+        }
+    }
+    // party comparison page //
+    .party-comparison .gallery div {
+        -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.35);
+    }
+    .party-comparison .gallery div img {
+        display: block;
+    }
+    .party-comparison .gallery div:not(:last-of-type) {
+        margin-bottom: 60px;
+    }
+    // view pdf links //
+    .content-strategy .out-link,
+    .style-guide .out-link,{
+        margin-top: 50px;
+        padding: 0 0 7px 0;
+        border-bottom: .19em solid $black;
+        color: $elections-canada;
+        transition: border-color .3s ease-in-out;
+        &:hover {
+            border-bottom: .19em solid $elections-canada;
+        }
+        &:active,
+        &:focus {
+            border-bottom: .19em solid $elections-canada;
+        }
+    }    
+    // project nav //
+    .project-nav {
+    
+        .previous {
+            &:hover,
+            &:focus,
+            &:active {
+                color: $elections-canada;;
+                border-bottom: .17em solid $elections-canada;;
+            }
+        }
+        .next {
+            &:hover,
+            &:focus,
+            &:active {
+                color: $elections-canada;;
+                border-bottom: .17em solid $elections-canada;;
+            }
+        }
+    }
+    // footer //
+    footer a:hover,
+    footer a:focus {
+        color: $elections-canada;
+    }
+    footer a:active {
+        color: shade( $elections-canada, 20%);
+    } 
 }

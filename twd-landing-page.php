@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once 'include/head.php'; // include head ?>
+<head>
+    <title>Work | TWD Landing Page</title>
+    <?php include_once 'include/head.php'; // include head ?>
+</head>
 
     <body id="twd-landing-page" class="project-page">
        
@@ -109,7 +112,7 @@
                 <!-- end color-palette container -->
                 <section class="accordion container">
                     <div class="description">
-                        <h3>Accordion Menu</h3>
+                        <h3>Accordion Navigation</h3>
                         <p>The accordion menu was created using jquery to toggle the open and close states of the menu. Opening each parent reveals the projects with in. When a project is clicked, the folder opens to reveal a slide-show of screen grabs showcasing the projects, with a button to view the live site through.</p>
                     </div>
                     <img src="images/twd-landing-page/landing-page-full-page.png" alt="a screen capture of Tevis Bateman's TWD website with the accordion interface open">
@@ -127,8 +130,8 @@
         <?php include_once 'include/footer.php'; // include footer ?>
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-            <script src="scripts/sticky-nav.js" type="text/javascript"></script>
-            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
+            <script src="scripts/sticky-nav.min.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.min.js" type="text/javascript"></script>
     </body>
 
 </html>

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once 'include/head.php'; // include head ?>
+<head>
+    <title>Work | New York Post Redesign</title>
+    <?php include_once 'include/head.php'; // include head ?>
+</head>
 
     <body id="new-york-post-redesign" class="project-page">
        
@@ -46,7 +49,7 @@
                 <section class="inspiration container">
                     <div class="description">
                         <h3>Starting Point</h3>
-                        <p>The inspiration for this project started in print. Knowing the main constraint was to create a fully responsive layout, I felt that finding a way to work with multiple columns would offer a useful challenge. ‘Multiple columns’ instantly conjured images of congested newspapers of old, as you can see in the image of the The New York Times below. After researching ‘old newspapers’ I quickly found that the New York Post is one of the oldest daily newspapers in North America, beginning circulation in 1801. Seeing the current state of the tabloid-esque newspaper, I felt it would be fun to rebrand their homepage to re-capture a bit of their heritage.</p>
+                        <p>The inspiration for this project started in print. Knowing the main constraint was to create a fully responsive layout, I felt that finding a way to work with multiple columns would offer a useful challenge. ‘Multiple columns’ instantly conjured images of congested newspapers of old, as you can see in the image of the The New York Times below. After researching ‘old newspapers’ I was surprised to learn that th New York Post is one of the oldest daily newspapers in North America, beginning circulation in 1801. Seeing the current state of the tabloid-esque newspaper, I felt it would be fun to rebrand their homepage to re-capture a bit of their heritage.</p>
                     </div> <img src="images/new-york-post/responsive-layout.jpg" alt="The front page of the New York Times, June 6th, 1944"> </section>
                 <!-- end inspiration container -->
                 <section class="typography container">
@@ -112,8 +115,8 @@
                 <!-- end menu container -->
                 
                 <nav class=project-nav>
-<!--                    <a class="previous">Previous</a> -->
-                    <a class="next" href="twd-landing-page.php?key=1">Next</a>
+                    <a class="previous" href="jonbenjamin.php">Previous</a> 
+                    <a class="next" href="twd-landing-page.php">Next</a>
                 </nav>
                 
             </div>
@@ -122,8 +125,8 @@
         <?php include_once 'include/footer.php'; // include footer ?>
             <!-- scripts -->
             <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-            <script src="scripts/sticky-nav.js" type="text/javascript"></script>
-            <script src="scripts/hide-mobile-menus.js" type="text/javascript"></script>
+            <script src="scripts/sticky-nav.min.js" type="text/javascript"></script>
+            <script src="scripts/hide-mobile-menus.min.js" type="text/javascript"></script>
     </body>
 
 </html>
