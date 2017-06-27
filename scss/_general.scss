@@ -217,7 +217,7 @@ header {
 }
 
 .container .description p {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .container .description p:last-of-type {
@@ -245,7 +245,7 @@ header {
     .container {
         margin: 150px 0;
     }
-    .container .description p {
+    .container .description p:last-of-type {
         margin-bottom: 100px;
     }
 }

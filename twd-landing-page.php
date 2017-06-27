@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div id="sticky-anchor">
-                        <a href="http://tbateman.htpwebdesign.ca/" id="sticky" class="out-link" target="_blank" >Visit Live Site</a>
+                        <a href="twd-landing-page/index.html" id="sticky" class="out-link" target="_blank" >Visit Live Site</a>
                     </div>    
                 </section>
                 <!-- end project-intro container -->
